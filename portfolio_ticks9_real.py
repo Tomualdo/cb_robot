@@ -392,7 +392,8 @@ def strategy(data,strategy_data,current_product):
                     elif buys[idx][0]['sell_flag'] == False and ooa_buy_key_exist == False:
                         buys_qty += 1
                         
-            print("ACTUAL BUYS = "+str(buys_qty)+"/"+max_buys+" || OOA BUYS = "+str(ooa_qty)+"/"+ooa_max_buys)
+            # print("ACTUAL BUYS = "+str(buys_qty)+"/"+max_buys+" || OOA BUYS = "+str(ooa_qty)+"/"+ooa_max_buys)
+            print("ACTUAL BUYS = {}/{} || OOA BUYS = {}/{}".format(buys_qty,max_buys,ooa_qty,ooa_max_buys))
 
             # First try to sell without signal ony if price over specific ratio:
             if len(buys.keys())>=1:
