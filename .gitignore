@@ -1,0 +1,13 @@
+coin2.py
+coin3.py
+coin4.py
+settings.json
+.venv
+.vscode
+buys.json
+data.json
+authorize_coinbase.py
+/__pycache__/
+*.log
+rtvs-dl.sh
+.pyc
