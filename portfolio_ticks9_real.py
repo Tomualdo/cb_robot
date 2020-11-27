@@ -365,7 +365,7 @@ def strategy(data,strategy_data,current_product):
         elif ballance_ratio > 12 and ballance_ratio <= 15:
             multiply_size = 1.3
         else:
-            multiply_size = 1.2
+            multiply_size = 1.1
 
         #calculate how big size is worth of EUR
         calc_buy_size = get_calc_minSize(current_product,EUR_to_buy_size)
@@ -392,7 +392,7 @@ def strategy(data,strategy_data,current_product):
                     elif buys[idx][0]['sell_flag'] == False and ooa_buy_key_exist == False:
                         buys_qty += 1
                         
-            print("ACTUAL BUYS = "+str(buys_qty)+" || OOA BUYS = "+str(ooa_qty))
+            print("ACTUAL BUYS = "+str(buys_qty)+"/"+max_buys+" || OOA BUYS = "+str(ooa_qty)+"/"+ooa_max_buys)
 
             # First try to sell without signal ony if price over specific ratio:
             if len(buys.keys())>=1:
