@@ -756,9 +756,9 @@ def robot(product_minute_candlestick,current_product,product_folder):
     now_time = datetime.now().timestamp()
     rec_diff = now_time - recent_record
     print("Time difference is {}".format(rec_diff))
-    if rec_diff > 7200: # 7200 = 2 hours
-        print("RECENT RECORD IS VERY OLD ! Exiting program...")
-        exit()
+    # if rec_diff > 7200: # 7200 = 2 hours
+    #     print("RECENT RECORD IS VERY OLD ! Exiting program...")
+    #     exit()
 
     df = pd.json_normalize(product_minute_candlestick,current_product)
     #format the collumns
