@@ -152,7 +152,7 @@ def order_market_size(currency,size):
     "type":"market",
     "product_id":currency}
     r = requests.post(api_url + 'orders',data=json.dumps(message), auth=auth)
-    time.sleep(1.5)
+    # time.sleep(1.5)
     product_folder = ROOT_DIR+'/'+currency
     response = r.json()
     save_responses(response,product_folder,currency)
@@ -160,18 +160,41 @@ def order_market_size(currency,size):
     
 def order_market_size_(response,product_folder,currency):
     pp(response)
+    # for key in list(response.keys()):
+    #     if key == 'message':
+    #         print("PROBLEM")
+    #         print(response['message']+" "+currency+" BUY")           
+    #         save_responses(response,product_folder,currency)
+    #         return{'done_reason':'failed'}
+    id = response['id'] 
+    r = requests.get(api_url + 'orders/'+id, auth=auth)   
+    response = r.json()
     for key in list(response.keys()):
         if key == 'message':
             print("PROBLEM")
             print(response['message']+" "+currency+" BUY")           
             save_responses(response,product_folder,currency)
-            return{'done_reason':False}
-    id = response['id'] 
-    r = requests.get(api_url + 'orders/'+id, auth=auth)   
-    response = r.json() 
-    pp(response)
-    save_responses(response,product_folder,currency)       
-    return r.json()
+            if response['message'] == 'NotFound':
+            # try to get order ID
+                for seq in range(60):
+                    print("request id again...")
+                    r = requests.get(api_url + 'orders/'+id, auth=auth)
+                    response = r.json()
+                    for key in list(response.keys()):
+                        if key != 'message':
+                            pp(response)
+                            save_responses(response,product_folder,currency)       
+                            return r.json()
+                        else:
+                            print("not correct response")                  
+                            time.sleep(1)
+                return{'done_reason':'failed'}
+            else:
+                return{'done_reason':'failed'}
+        # if key is not message retrun normaly
+        pp(response)
+        save_responses(response,product_folder,currency)       
+        return r.json()
 
 def order_info(id):
     r = requests.get(api_url + 'orders/'+id, auth=auth)   

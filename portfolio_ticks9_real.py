@@ -248,6 +248,30 @@ def buy_procedure(i,current_product,data,buys,calc_buy_size,buy_process_number,s
         logger.warning(buy_process_number+" -AFTER BUYS APPEND "+current_product+" "+str(buys))
         print("ooa_buy is {}".format(ooa_buy))
         push_note("BUY " + current_product,str(coins)+" at "+(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+    elif buy_response['done_reason'] == 'failed':
+        # coins = (money/data['close'][i])
+        # coins = float(buy_response['filled_size']) # REAL
+        # fee = (money*0.005)
+        # fee = float(buy_response['fill_fees']) #REAL
+        # value = value + money
+        # coins = (money/data['close'][i])
+        # fee = (money*0.005)
+        # value = value + money
+        time = str(data.index[i])
+        # buys[time].append({'buy_time':time, 'buy_price':data['close'][i],'spend_EUR':money, 'coins': coins, 'fee': fee, 'sell_flag' : False, 'sell_price': 0,'sell_time' : 0,'earn':0})
+        buys[time].append({'buy_time':time,
+                            'buy_price': data['close'][i],
+                            'spend_EUR': 0,
+                            'coins': 0,
+                            'fee': 0,
+                            'sell_flag' : False,
+                            'sell_price': 0,
+                            'sell_time' : 0,
+                            'earn':0,
+                            'ooa_buy' : ooa_buy}) #REAL
+        logger.warning(buy_process_number+" -AFTER BUYS APPEND "+current_product+" "+str(buys))
+        print("ooa_buy is {}".format(ooa_buy))
+        # push_note("BUY " + current_product,str(coins)+" at "+(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
     else:
         # failed buy ?
         push_note("BUY FAIL #"+buy_process_number+" " + current_product," at "+(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
