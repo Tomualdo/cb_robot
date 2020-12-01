@@ -176,17 +176,18 @@ def order_market_size_(response,product_folder,currency):
             save_responses(response,product_folder,currency)
             if response['message'] == 'NotFound':
             # try to get order ID
-                for seq in range(60):
+                for seq in range(1800):
                     print("request id again...")
                     r = requests.get(api_url + 'orders/'+id, auth=auth)
                     response = r.json()
                     for key in list(response.keys()):
                         if key != 'message':
+                            print("ID get attempt successful")
                             pp(response)
                             save_responses(response,product_folder,currency)       
                             return r.json()
                         else:
-                            print("not correct response")                  
+                            print("not correct response {}".format(seq))                  
                             time.sleep(1)
                 return{'done_reason':'failed'}
             else:
@@ -264,15 +265,38 @@ def sell_market_size(currency,size):
 def sell_market_size_(response,product_folder,currency):
 
     pp(response)
-    for key in list(response.keys()):
-        if key == 'message':
-            print("PROBLEM")
-            print(response['message']+" "+currency+" SELL")
-            save_responses(response,product_folder,currency)
-            return{'done_reason':False}
+    # for key in list(response.keys()):
+    #     if key == 'message':
+    #         print("PROBLEM")
+    #         print(response['message']+" "+currency+" SELL")
+    #         save_responses(response,product_folder,currency)
+    #         return{'done_reason':False}
     id = response['id']
     r = requests.get(api_url + 'orders/'+id, auth=auth)
     response = r.json()
+    for key in list(response.keys()):
+        if key == 'message':
+            print("PROBLEM")
+            print(response['message']+" "+currency+" SELL")           
+            save_responses(response,product_folder,currency)
+            if response['message'] == 'NotFound':
+            # try to get order ID
+                for seq in range(1800):
+                    print("request id again...")
+                    r = requests.get(api_url + 'orders/'+id, auth=auth)
+                    response = r.json()
+                    for key in list(response.keys()):
+                        if key != 'message':
+                            print("ID get attempt successful")
+                            pp(response)
+                            save_responses(response,product_folder,currency)       
+                            return r.json()
+                        else:
+                            print("not correct response {}".format(seq))                  
+                            time.sleep(1)
+                return{'done_reason':'failed'}
+            else:
+                return{'done_reason':'failed'}
     pp(response)
     save_responses(response,product_folder,currency)
     return r.json()

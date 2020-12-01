@@ -554,6 +554,49 @@ def strategy(data,strategy_data,current_product):
                                     print("SELL {} for={} real= {}".format(current_product,data['close'][i],float(sell_response['executed_value'])))
                                     if there_was_buy_or_sell :
                                         logger.info(" BEFORE RETURN "+current_product+" "+str(buys))
+
+                                elif sell_response['done_reason'] == 'failed':
+                                    earnValue = buys[idx][0]['earn']
+                                    # earnValue = earnValue + buys[idx][0]['coins'] * data['close'][i] - buys[idx][0]['fee'] - buys[idx][0]['spend_EUR']
+                                    # earnValue = earnValue + float(sell_response['executed_value']) - float(sell_response['fill_fees']) - buys[idx][0]['spend_EUR']
+                                    earnValue = 0
+                                    buys[idx][0]['sell_flag'] = True  
+                                    # buys[idx][0]['sell_price'] = data['close'][i]
+                                    # buys[idx][0]['sell_price'] = float(sell_response['executed_value']) / float(sell_response['filled_size'])
+                                    buys[idx][0]['sell_price'] = 0
+                                    buys[idx][0]['sell_time'] = str(data.index[i])
+                                    buys[idx][0]['earn'] = earnValue
+                                    earn = earn + earnValue
+                                    # buys[idx][0]['buy_price'] = 0
+                                    # buys[idx][0]['sell_time'] = buys[idx]
+                                    #generate sell signlas if sells_not_empty_record is not empty
+                                    sell_flag = True
+                                    there_was_buy_or_sell = True
+                                    push_note("SELL " + current_product,str(sell_size)+" earn: "+str(earnValue)+" at "+(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+                                    ######################################################
+                                    ############ LEDGER SAVE  ############################
+                                    ######################################################
+                                    product_folder = ROOT_DIR+'/'+current_product
+                                    ledger_file = product_folder+'/'+current_product+'buys.json'
+                                    #analyze buys - clean empty records
+                                    if there_was_buy_or_sell:
+                                        try:
+                                            clean_buys = {}
+                                            # buys = strategy_return[3] 
+                                            if buys != {}:
+                                                for record in buys:
+                                                    if not buys[record]==[]:
+                                                        clean_buys[record]=buys[record]    
+                                            logger.info(datetime.now().strftime("%Y-%m-%d %H:%M:%S")+" CLEAN "+current_product+" "+str(clean_buys))
+                                            #save clean buys (ledger) after strategy
+                                            if clean_buys != {}:
+                                                with open(ledger_file,'w') as new_file: 
+                                                    json.dump(clean_buys, new_file, indent=4)
+                                                print("LEDGER SAVED "+current_product)
+                                                print("-----------------------------------------------------------------------------------------------------------")   
+                                        except Exception as e: 
+                                            print(e)
+                                    print("SELL {} for={} BROKEN SELL".format(current_product,data['close'][i]))
                             else:
                                 print("bid is too small --- SELL stopped")
 
