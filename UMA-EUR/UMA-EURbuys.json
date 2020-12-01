@@ -978,5 +978,19 @@
             "earn": 0,
             "ooa_buy": false
         }
+    ],
+    "2020-12-01 12:25:00": [
+        {
+            "buy_time": "2020-12-01 12:25:00",
+            "buy_price": 6.808,
+            "spend_EUR": 12.2544,
+            "coins": 1.8,
+            "fee": 0.0428904,
+            "sell_flag": false,
+            "sell_price": 0,
+            "sell_time": 0,
+            "earn": 0,
+            "ooa_buy": true
+        }
     ]
 }

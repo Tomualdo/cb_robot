@@ -3519,5 +3519,42 @@
     },
     {
         "message": "NotFound"
+    },
+    {
+        "id": "281ceb69-ddad-49e9-9fff-716d9f816fce",
+        "size": "1.8",
+        "product_id": "UMA-EUR",
+        "side": "buy",
+        "stp": "dc",
+        "funds": "476.434116",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2020-12-01T11:27:06.471078Z",
+        "fill_fees": "0",
+        "filled_size": "0",
+        "executed_value": "0",
+        "status": "pending",
+        "settled": false
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "281ceb69-ddad-49e9-9fff-716d9f816fce",
+        "size": "1.80000000",
+        "product_id": "UMA-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "buy",
+        "funds": "476.4341160000000000",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2020-12-01T11:27:06.471078Z",
+        "done_at": "2020-12-01T11:27:06.492Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0428904000000000",
+        "filled_size": "1.80000000",
+        "executed_value": "12.2544000000000000",
+        "status": "done",
+        "settled": true
     }
 ]

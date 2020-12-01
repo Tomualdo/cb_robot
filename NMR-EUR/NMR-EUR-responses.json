@@ -2749,5 +2749,100 @@
     },
     {
         "message": "NotFound"
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "384cb623-23ca-4add-8b10-6d18f55a4af4",
+        "size": "0.40000000",
+        "product_id": "NMR-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2020-12-01T09:14:33.90629Z",
+        "done_at": "2020-12-01T09:14:33.916Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0398610800000000",
+        "filled_size": "0.40000000",
+        "executed_value": "11.3888800000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "b4a1c2c6-ad85-4350-9c0c-8275acaeec02",
+        "size": "0.40000000",
+        "product_id": "NMR-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2020-12-01T09:14:58.204336Z",
+        "done_at": "2020-12-01T09:14:58.216Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0398805400000000",
+        "filled_size": "0.40000000",
+        "executed_value": "11.3944400000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "4b2b2463-e1f5-4394-8b40-07ad31695b4d",
+        "size": "0.50000000",
+        "product_id": "NMR-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2020-12-01T09:15:16.991577Z",
+        "done_at": "2020-12-01T09:15:17Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0498730750000000",
+        "filled_size": "0.50000000",
+        "executed_value": "14.2494500000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "d5ccd74c-55a5-4fb5-982d-2dda4f47661d",
+        "size": "0.40000000",
+        "product_id": "NMR-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2020-12-01T09:16:12.901241Z",
+        "done_at": "2020-12-01T09:16:12.913Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0398986000000000",
+        "filled_size": "0.40000000",
+        "executed_value": "11.3996000000000000",
+        "status": "done",
+        "settled": true
     }
 ]

@@ -3381,5 +3381,62 @@
         "executed_value": "20.3979024000000000",
         "status": "done",
         "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "b27e2f44-b71d-49e3-981f-a4793caf3fec",
+        "size": "56.50000000",
+        "product_id": "ZRX-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2020-12-01T07:05:11.893935Z",
+        "done_at": "2020-12-01T07:05:11.909Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0711811012500000",
+        "filled_size": "56.50000000",
+        "executed_value": "20.3374575000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "id": "56e72f39-34e8-4b84-9e9b-6f8898d51c49",
+        "size": "32.8",
+        "product_id": "ZRX-EUR",
+        "side": "buy",
+        "stp": "dc",
+        "funds": "500.62804497",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2020-12-01T11:23:45.199116Z",
+        "fill_fees": "0",
+        "filled_size": "0",
+        "executed_value": "0",
+        "status": "pending",
+        "settled": false
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "56e72f39-34e8-4b84-9e9b-6f8898d51c49",
+        "size": "32.80000000",
+        "product_id": "ZRX-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "buy",
+        "funds": "500.6280449700000000",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2020-12-01T11:23:45.199116Z",
+        "done_at": "2020-12-01T11:23:45.219Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0420421708000000",
+        "filled_size": "32.80000000",
+        "executed_value": "12.0120488000000000",
+        "status": "done",
+        "settled": true
     }
 ]

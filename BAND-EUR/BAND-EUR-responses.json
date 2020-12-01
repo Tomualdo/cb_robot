@@ -3636,5 +3636,45 @@
         "executed_value": "20.1706540000000000",
         "status": "done",
         "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "7e118cb7-7f3a-4f1e-8a64-a8417fdf3d32",
+        "size": "3.90000000",
+        "product_id": "BAND-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2020-12-01T07:21:10.225829Z",
+        "done_at": "2020-12-01T07:21:10.235Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0716910600000000",
+        "filled_size": "3.90000000",
+        "executed_value": "20.4831600000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "a3813726-514e-4e60-aa25-f0677b748341",
+        "size": "2.30000000",
+        "product_id": "BAND-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2020-12-01T07:33:44.437659Z",
+        "done_at": "2020-12-01T07:33:44.449Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0425845000000000",
+        "filled_size": "2.30000000",
+        "executed_value": "12.1670000000000000",
+        "status": "done",
+        "settled": true
     }
 ]

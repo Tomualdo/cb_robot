@@ -3075,5 +3075,48 @@
         "executed_value": "12.0735000000000000",
         "status": "done",
         "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "aac478a4-e866-4cb3-967b-ba45956cd2a6",
+        "size": "4.4",
+        "product_id": "EOS-EUR",
+        "side": "buy",
+        "stp": "dc",
+        "funds": "467.3479",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2020-12-01T09:29:27.828169Z",
+        "fill_fees": "0",
+        "filled_size": "0",
+        "executed_value": "0",
+        "status": "pending",
+        "settled": false
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "aac478a4-e866-4cb3-967b-ba45956cd2a6",
+        "size": "4.40000000",
+        "product_id": "EOS-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "buy",
+        "funds": "467.3479000000000000",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2020-12-01T09:29:27.828169Z",
+        "done_at": "2020-12-01T09:29:27.836Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0419650000000000",
+        "filled_size": "4.40000000",
+        "executed_value": "11.9900000000000000",
+        "status": "done",
+        "settled": true
     }
 ]
