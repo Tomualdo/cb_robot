@@ -283,6 +283,7 @@ def sell_market_size_(response,product_folder,currency):
     id = response['id']
     r = requests.get(api_url + 'orders/'+id, auth=auth)
     response = r.json()
+    pp(response)
     for key in list(response.keys()):
         if key == 'message':
             print("PROBLEM")
@@ -303,9 +304,26 @@ def sell_market_size_(response,product_folder,currency):
                         else:
                             print("not correct response {}".format(seq))                  
                             time.sleep(1)
+        elif key == 'status':  #'status': 'pending'
+            if response['status'] == 'pending':
+                for seq in range(1800):
+                    print("request id again...")
+                    r = requests.get(api_url + 'orders/'+id, auth=auth)
+                    response = r.json()
+                    
+                    if response['status'] == 'done':
+                        print("ID get attempt successful")
+                        pp(response)
+                        save_responses(response,product_folder,currency)       
+                        return r.json()
+                    else:
+                        print("not DONE sell response {}".format(seq))                  
+                        time.sleep(1)
                 return{'done_reason':'failed'}
-            else:
-                return{'done_reason':'failed'}
+            elif response['status'] == 'done':
+                pp(response)
+                save_responses(response,product_folder,currency)
+                return r.json()
     pp(response)
     save_responses(response,product_folder,currency)
     return r.json()

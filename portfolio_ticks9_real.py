@@ -519,7 +519,7 @@ def strategy(data,strategy_data,current_product):
                                 # sell how much coins are in the ledger data ['coins']
                                 sell_size = buys[idx][0]['coins']
                                 # earn = ((coins * data['close'][i]) - fee) - value
-                                push_note("SELL " + current_product," at "+(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+                                print("SELL " + current_product," at "+(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
                                 sell_response = sell_market_size(current_product,sell_size)
                                 if sell_response['done_reason'] == 'filled':
                                     earnValue = buys[idx][0]['earn']
