@@ -795,7 +795,7 @@ def robot(product_minute_candlestick,current_product,product_folder):
     print("THE MOST RECENT record loaded {}".format(product_minute_candlestick[current_product][-1]['time']))
 
     # check recent time if it is not delayed too much
-    recent_record = dateutil.parser.parse(str(product_minute_candlestick[current_product][-1]['time'])).timestamp()
+    recent_record = dateutil.parser.parse(str(product_minute_candlestick[current_product][-1]['time']),dayfirst=True).timestamp()
     now_time = datetime.now().timestamp()
     rec_diff = now_time - recent_record
     print("Time difference is {}".format(rec_diff))
