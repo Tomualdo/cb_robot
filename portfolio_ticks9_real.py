@@ -210,99 +210,107 @@ def buy_procedure(i,current_product,data,buys,calc_buy_size,buy_process_number,s
     calc_buy_size = calculated size
     buy_process_number = for recognise which sequence was used for buy
     """
-    ooa_buy = False # over C - average buy
-    # BUY if there are no active buys (everything is sold...)
-    logger.warning(buy_process_number+" -BUY with emppty list "+current_product+" "+str(buys))
-    there_was_buy_or_sell = True
-    #create buys time key
-    buys[str(data.index[i])] = []
-    push_note("BUY "+buy_process_number+" "+ current_product," at "+(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
-    # if last close is higher than cumulative average --> recalculate price
-    if data['close'][i] > data['C-AVG'][i]:
-        print("Buy signal is over tahn C-AVG level...recalculate size...")
-        calc_buy_size = get_calc_minSize_over_C_avg(current_product,calc_buy_size,strategy_data)
-        print("Recalculated size is {}".format(calc_buy_size))
-        ooa_buy = True
-    buy_response = order_market_size(current_product,calc_buy_size) #REAL
-    if buy_response['done_reason'] == 'filled':
-        # coins = (money/data['close'][i])
-        coins = float(buy_response['filled_size']) # REAL
-        # fee = (money*0.005)
-        fee = float(buy_response['fill_fees']) #REAL
-        # value = value + money
-        # coins = (money/data['close'][i])
-        # fee = (money*0.005)
-        # value = value + money
-        time = str(data.index[i])
-        # buys[time].append({'buy_time':time, 'buy_price':data['close'][i],'spend_EUR':money, 'coins': coins, 'fee': fee, 'sell_flag' : False, 'sell_price': 0,'sell_time' : 0,'earn':0})
-        buys[time].append({'buy_time':time,
-                            'buy_price': float(buy_response['executed_value']) / float(buy_response['filled_size']),
-                            'spend_EUR':float(buy_response['executed_value']),
-                            'coins': coins,
-                            'fee': fee,
-                            'sell_flag' : False,
-                            'sell_price': 0,
-                            'sell_time' : 0,
-                            'earn':0,
-                            'ooa_buy' : ooa_buy}) #REAL
-        logger.warning(buy_process_number+" -AFTER BUYS APPEND "+current_product+" "+str(buys))
-        print("ooa_buy is {}".format(ooa_buy))
-        push_note("BUY " + current_product,str(coins)+" at "+(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
-    elif buy_response['done_reason'] == 'failed':
-        # coins = (money/data['close'][i])
-        # coins = float(buy_response['filled_size']) # REAL
-        # fee = (money*0.005)
-        # fee = float(buy_response['fill_fees']) #REAL
-        # value = value + money
-        # coins = (money/data['close'][i])
-        # fee = (money*0.005)
-        # value = value + money
-        time = str(data.index[i])
-        # buys[time].append({'buy_time':time, 'buy_price':data['close'][i],'spend_EUR':money, 'coins': coins, 'fee': fee, 'sell_flag' : False, 'sell_price': 0,'sell_time' : 0,'earn':0})
-        buys[time].append({'buy_time':time,
-                            'buy_price': data['close'][i],
-                            'spend_EUR': 0,
-                            'coins': 0,
-                            'fee': 0,
-                            'sell_flag' : False,
-                            'sell_price': 0,
-                            'sell_time' : 0,
-                            'earn':0,
-                            'ooa_buy' : ooa_buy}) #REAL
-        logger.warning(buy_process_number+" -AFTER BUYS APPEND "+current_product+" "+str(buys))
-        print("ooa_buy is {}".format(ooa_buy))
-        # push_note("BUY " + current_product,str(coins)+" at "+(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
-    else:
-        # failed buy ?
-        push_note("BUY FAIL #"+buy_process_number+" " + current_product," at "+(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
-        there_was_buy_or_sell = False
+    try:
+        ooa_buy = False # over C - average buy
+        # BUY if there are no active buys (everything is sold...)
+        logger.warning(buy_process_number+" -BUY with emppty list "+current_product+" "+str(buys))
+        there_was_buy_or_sell = True
+        #create buys time key
+        buys[str(data.index[i])] = []
+        push_note("BUY "+buy_process_number+" "+ current_product," at "+(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+        # if last close is higher than cumulative average --> recalculate price
+        if data['close'][i] > data['C-AVG'][i]:
+            print("Buy signal is over tahn C-AVG level...recalculate size...")
+            calc_buy_size = get_calc_minSize_over_C_avg(current_product,calc_buy_size,strategy_data)
+            print("Recalculated size is {}".format(calc_buy_size))
+            ooa_buy = True
+        buy_response = order_market_size(current_product,calc_buy_size) #REAL
+        if buy_response['done_reason'] == 'filled':
+            # coins = (money/data['close'][i])
+            coins = float(buy_response['filled_size']) # REAL
+            # fee = (money*0.005)
+            fee = float(buy_response['fill_fees']) #REAL
+            # value = value + money
+            # coins = (money/data['close'][i])
+            # fee = (money*0.005)
+            # value = value + money
+            time = str(data.index[i])
+            # buys[time].append({'buy_time':time, 'buy_price':data['close'][i],'spend_EUR':money, 'coins': coins, 'fee': fee, 'sell_flag' : False, 'sell_price': 0,'sell_time' : 0,'earn':0})
+            buys[time].append({'buy_time':time,
+                                'buy_price': float(buy_response['executed_value']) / float(buy_response['filled_size']),
+                                'spend_EUR':float(buy_response['executed_value']),
+                                'coins': coins,
+                                'fee': fee,
+                                'sell_flag' : False,
+                                'sell_price': 0,
+                                'sell_time' : 0,
+                                'earn':0,
+                                'ooa_buy' : ooa_buy}) #REAL
+            logger.warning(buy_process_number+" -AFTER BUYS APPEND "+current_product+" "+str(buys))
+            print("ooa_buy is {}".format(ooa_buy))
+            push_note("BUY " + current_product,str(coins)+" at "+(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+        elif buy_response['done_reason'] == 'failed':
+            # coins = (money/data['close'][i])
+            # coins = float(buy_response['filled_size']) # REAL
+            # fee = (money*0.005)
+            # fee = float(buy_response['fill_fees']) #REAL
+            # value = value + money
+            # coins = (money/data['close'][i])
+            # fee = (money*0.005)
+            # value = value + money
+            time = str(data.index[i])
+            # buys[time].append({'buy_time':time, 'buy_price':data['close'][i],'spend_EUR':money, 'coins': coins, 'fee': fee, 'sell_flag' : False, 'sell_price': 0,'sell_time' : 0,'earn':0})
+            buys[time].append({'buy_time':time,
+                                'buy_price': data['close'][i],
+                                'spend_EUR': 0,
+                                'coins': 0,
+                                'fee': 0,
+                                'sell_flag' : False,
+                                'sell_price': 0,
+                                'sell_time' : 0,
+                                'earn':0,
+                                'ooa_buy' : ooa_buy}) #REAL
+            logger.warning(buy_process_number+" -AFTER BUYS APPEND "+current_product+" "+str(buys))
+            print("ooa_buy is {}".format(ooa_buy))
+            # push_note("BUY " + current_product,str(coins)+" at "+(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+        else:
+            # failed buy ?
+            push_note("BUY FAIL #"+buy_process_number+" " + current_product," at "+(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+            there_was_buy_or_sell = False
 
-    ######################################################
-    ############ LEDGER SAVE  ############################
-    ######################################################
-    product_folder = ROOT_DIR+'/'+current_product
-    ledger_file = product_folder+'/'+current_product+'buys.json'
-    #analyze buys - clean empty records
-    if there_was_buy_or_sell:
-        try:
-            clean_buys = {}
-            # buys = strategy_return[3] 
-            if buys != {}:
-                for record in buys:
-                    if not buys[record]==[]:
-                            clean_buys[record]=buys[record]    
-            # logger.info(datetime.now().strftime("%Y-%m-%d %H:%M:%S")+" CLEAN "+current_product+" "+str(clean_buys))
-            #save clean buys (ledger) after strategy
-            if clean_buys != {}:
-                with open(ledger_file,'w') as new_file: 
-                    json.dump(clean_buys, new_file, indent=4)
-                print("LEDGER SAVED "+current_product)
-                print("-----------------------------------------------------------------------------------------------------------")   
-        except Exception as e: 
-            print(e)
-    # if there_was_buy_or_sell :
-    #     logger.info(" BEFORE RETURN "+current_product+" "+str(buys))
-    return there_was_buy_or_sell
+        ######################################################
+        ############ LEDGER SAVE  ############################
+        ######################################################
+        product_folder = ROOT_DIR+'/'+current_product
+        ledger_file = product_folder+'/'+current_product+'buys.json'
+        #analyze buys - clean empty records
+        if there_was_buy_or_sell:
+            try:
+                clean_buys = {}
+                # buys = strategy_return[3] 
+                if buys != {}:
+                    for record in buys:
+                        if not buys[record]==[]:
+                                clean_buys[record]=buys[record]    
+                # logger.info(datetime.now().strftime("%Y-%m-%d %H:%M:%S")+" CLEAN "+current_product+" "+str(clean_buys))
+                #save clean buys (ledger) after strategy
+                if clean_buys != {}:
+                    with open(ledger_file,'w') as new_file: 
+                        json.dump(clean_buys, new_file, indent=4)
+                    print("LEDGER SAVED "+current_product)
+                    print("-----------------------------------------------------------------------------------------------------------")   
+            except Exception as e: 
+                print(e)
+        # if there_was_buy_or_sell :
+        #     logger.info(" BEFORE RETURN "+current_product+" "+str(buys))
+        return there_was_buy_or_sell
+    except Exception as e: 
+        print(e)
+        push_note(e," error at buy_procedure "+current_product+" at "+(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+        exc_type, exc_obj, exc_tb = sys.exc_info()
+        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        print(exc_type, fname, exc_tb.tb_lineno,e)
+        exit()
 
 # minutes_processed = {}
 product_minutes_processed = {}
