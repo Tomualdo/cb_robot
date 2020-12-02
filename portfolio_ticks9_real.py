@@ -225,6 +225,7 @@ def buy_procedure(i,current_product,data,buys,calc_buy_size,buy_process_number,s
             print("Recalculated size is {}".format(calc_buy_size))
             ooa_buy = True
         buy_response = order_market_size(current_product,calc_buy_size) #REAL
+        print("BUY OK")
         if buy_response['done_reason'] == 'filled':
             # coins = (money/data['close'][i])
             coins = float(buy_response['filled_size']) # REAL

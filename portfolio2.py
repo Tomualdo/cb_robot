@@ -3,6 +3,7 @@ from requests.auth import AuthBase
 from pprintpp import pprint as pp
 from authorize_coinbase import *
 import logging
+import sys
 
 ROOT_DIR = os.path.abspath(os.curdir)
 
@@ -159,43 +160,51 @@ def order_market_size(currency,size):
     return (order_market_size_(response,product_folder,currency))
     
 def order_market_size_(response,product_folder,currency):
-    pp(response)
-    # for key in list(response.keys()):
-    #     if key == 'message':
-    #         print("PROBLEM")
-    #         print(response['message']+" "+currency+" BUY")           
-    #         save_responses(response,product_folder,currency)
-    #         return{'done_reason':'failed'}
-    id = response['id'] 
-    r = requests.get(api_url + 'orders/'+id, auth=auth)   
-    response = r.json()
-    for key in list(response.keys()):
-        if key == 'message':
-            print("PROBLEM")
-            print(response['message']+" "+currency+" BUY")           
-            save_responses(response,product_folder,currency)
-            if response['message'] == 'NotFound':
-            # try to get order ID
-                for seq in range(1800):
-                    print("request id again...")
-                    r = requests.get(api_url + 'orders/'+id, auth=auth)
-                    response = r.json()
-                    for key in list(response.keys()):
-                        if key != 'message':
-                            print("ID get attempt successful")
-                            pp(response)
-                            save_responses(response,product_folder,currency)       
-                            return r.json()
-                        else:
-                            print("not correct response {}".format(seq))                  
-                            time.sleep(1)
-                return{'done_reason':'failed'}
-            else:
-                return{'done_reason':'failed'}
-        # if key is not message retrun normaly
+    try:
         pp(response)
-        save_responses(response,product_folder,currency)       
-        return r.json()
+        # for key in list(response.keys()):
+        #     if key == 'message':
+        #         print("PROBLEM")
+        #         print(response['message']+" "+currency+" BUY")           
+        #         save_responses(response,product_folder,currency)
+        #         return{'done_reason':'failed'}
+        id = response['id'] 
+        r = requests.get(api_url + 'orders/'+id, auth=auth)   
+        response = r.json()
+        for key in list(response.keys()):
+            if key == 'message':
+                print("PROBLEM")
+                print(response['message']+" "+currency+" BUY")           
+                save_responses(response,product_folder,currency)
+                if response['message'] == 'NotFound':
+                # try to get order ID
+                    for seq in range(1800):
+                        print("request id again...")
+                        r = requests.get(api_url + 'orders/'+id, auth=auth)
+                        response = r.json()
+                        for key in list(response.keys()):
+                            if key != 'message':
+                                print("ID get attempt successful")
+                                pp(response)
+                                save_responses(response,product_folder,currency)       
+                                return r.json()
+                            else:
+                                print("not correct response {}".format(seq))                  
+                                time.sleep(1)
+                    return{'done_reason':'failed'}
+                else:
+                    return{'done_reason':'failed'}
+            # if key is not message retrun normaly
+            pp(response)
+            save_responses(response,product_folder,currency)       
+            return r.json()
+    except Exception as e: 
+        print(e)
+        print(e," error at order_market_size_ ")
+        exc_type, exc_obj, exc_tb = sys.exc_info()
+        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        print(exc_type, fname, exc_tb.tb_lineno,e)
+        return{'done_reason':'failed'}
 
 def order_info(id):
     r = requests.get(api_url + 'orders/'+id, auth=auth)   
