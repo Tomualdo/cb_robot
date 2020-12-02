@@ -6431,5 +6431,82 @@
         "executed_value": "19.8799000000000000",
         "status": "done",
         "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "5a749c88-d894-466a-8e8f-3447bb2d226d",
+        "size": "6.10000000",
+        "product_id": "OMG-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2020-12-01T07:35:47.33133Z",
+        "done_at": "2020-12-01T07:35:47.342Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0709289700000000",
+        "filled_size": "6.10000000",
+        "executed_value": "20.2654200000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "a1409c54-8b3f-4467-8a43-dd99a9d6757e",
+        "size": "13.40000000",
+        "product_id": "OMG-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2020-12-01T11:14:25.155974Z",
+        "done_at": "2020-12-01T11:14:25.188Z",
+        "done_reason": "filled",
+        "fill_fees": "0.1595584900000000",
+        "filled_size": "13.40000000",
+        "executed_value": "45.5881400000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "id": "668cf3a9-7481-41dc-b7d6-9a277a514559",
+        "size": "3.7",
+        "product_id": "OMG-EUR",
+        "side": "buy",
+        "stp": "dc",
+        "funds": "488.61599",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2020-12-01T11:26:12.167335Z",
+        "fill_fees": "0",
+        "filled_size": "0",
+        "executed_value": "0",
+        "status": "pending",
+        "settled": false
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "668cf3a9-7481-41dc-b7d6-9a277a514559",
+        "size": "3.70000000",
+        "product_id": "OMG-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "buy",
+        "funds": "488.6159900000000000",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2020-12-01T11:26:12.167335Z",
+        "done_at": "2020-12-01T11:26:12.195Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0426365800000000",
+        "filled_size": "3.70000000",
+        "executed_value": "12.1818800000000000",
+        "status": "done",
+        "settled": true
     }
 ]

@@ -1205,5 +1205,35 @@
         "executed_value": "43.7760000000000000",
         "status": "done",
         "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "message": "Insufficient funds"
+    },
+    {
+        "message": "Insufficient funds"
+    },
+    {
+        "message": "Insufficient funds"
+    },
+    {
+        "message": "Insufficient funds"
+    },
+    {
+        "message": "Insufficient funds"
+    },
+    {
+        "message": "Insufficient funds"
     }
 ]
