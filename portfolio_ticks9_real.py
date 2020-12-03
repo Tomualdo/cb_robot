@@ -488,19 +488,29 @@ def strategy(data,strategy_data,current_product):
                         break
                     for idx in sells_not_empty_record:
                         # minimu for fee cashback is 1.005
-                        # check if buy si ooa 
-                        if 'ooa_buy' in buys[idx][0]: # key exist
-                            if buys[idx][0]['ooa_buy']: # if True
-                                sell_price_ratio = ooa_sell_ratio
-                            else:   # if false
+                        if sell_out_of_bounds:
+                            if 'ooa_buy' in buys[idx][0]: # key exist
+                                if buys[idx][0]['ooa_buy']: # if True
+                                    sell_price_ratio = ooa_out_of_bound_sell_ratio
+                                else:   # if false
+                                    sell_price_ratio = out_of_bound_sell_ratio
+                            else:
+                                sell_price_ratio = out_of_bound_sell_ratio
+                            actual_sell_price = data['close'][i]
+                        else: # normal sell {NOT OUT OF BOUNDS}
+                            # check if buy si ooa 
+                            if 'ooa_buy' in buys[idx][0]: # key exist
+                                if buys[idx][0]['ooa_buy']: # if True
+                                    sell_price_ratio = ooa_sell_ratio
+                                else:   # if false
+                                    sell_price_ratio = sell_ratio
+                            else:
                                 sell_price_ratio = sell_ratio
-                        else:
-                            sell_price_ratio = sell_ratio
-                        actual_sell_price = data['close'][i]
+                            actual_sell_price = data['close'][i]
 
                         #search for sell_flag False nad lowest buy price !!! minimum sell ratio (sell for 6 buy for 5: 6/5=1.2 ratio)
                         actual_sell_price_ratio = actual_sell_price / buys[idx][0]['buy_price']
-                        print ("Actual price {} / buy price {} = {} ... sell ratio is {}".format(actual_sell_price,round(buys[idx][0]['buy_price'],2),round(actual_sell_price_ratio,2),sell_price_ratio))
+                        print ("Actual price {} / buy price {} = {} ... sell ratio is {} ooa is {}".format(actual_sell_price,round(buys[idx][0]['buy_price'],2),round(actual_sell_price_ratio,3),sell_price_ratio,sell_out_of_bounds))
                         if not buys[idx][0]['sell_flag'] and actual_sell_price_ratio >= sell_price_ratio:
                             print("watnt sell:{} last close {}".format(current_product,actual_sell_price))
                             # prepare loop for bid check
