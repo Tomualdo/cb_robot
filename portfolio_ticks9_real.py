@@ -625,7 +625,7 @@ def strategy(data,strategy_data,current_product):
             elif data['close'][i] < data['lower'][i] and (buys_qty < max_buys or ooa_qty < ooa_max_buys) and min_ballance_buy < actual_ballance:
                 bullish = data['close'][i] / data['C-AVG'][i]
                 print("want buy:{} -- close price / c-avg ={}".format(current_product,round(bullish,2)))
-                if bullish > 1.10:
+                if bullish > 1.08:
                     print("BRUTAL Bullish..NOT BUY !!")
                     break
                 logger.warning(" wanna buy "+current_product)
