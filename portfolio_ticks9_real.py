@@ -500,7 +500,7 @@ def strategy(data,strategy_data,current_product):
 
                         #search for sell_flag False nad lowest buy price !!! minimum sell ratio (sell for 6 buy for 5: 6/5=1.2 ratio)
                         actual_sell_price_ratio = actual_sell_price / buys[idx][0]['buy_price']
-                        print ("Actual price {} / buy price {} = {}".format(actual_sell_price,buys[idx][0]['buy_price'],actual_sell_price_ratio))
+                        print ("Actual price {} / buy price {} = {} ... sell ratio is {}".format(actual_sell_price,round(buys[idx][0]['buy_price'],2),round(actual_sell_price_ratio,2),sell_price_ratio))
                         if not buys[idx][0]['sell_flag'] and actual_sell_price_ratio >= sell_price_ratio:
                             print("watnt sell:{} last close {}".format(current_product,actual_sell_price))
                             # prepare loop for bid check
