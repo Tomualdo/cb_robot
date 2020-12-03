@@ -469,6 +469,7 @@ def strategy(data,strategy_data,current_product):
                 # if str(data.index[i]) not in buys:
                 #   buys[str(data.index[i])] = []
                 #look if there are some records in buys dict
+                print("Passed sell check...")
                 if len(buys.keys())>=1:
                     #loop over buys to        
                     for idx in range(len(buys.keys())):
@@ -497,8 +498,10 @@ def strategy(data,strategy_data,current_product):
                             sell_price_ratio = sell_ratio
                         actual_sell_price = data['close'][i]
 
-                        #search for sell_flag False nad lowest buy price !!! minimum sell ratio (sell for 6 buy for 5: 6/5=1.2 ratio)    
-                        if not buys[idx][0]['sell_flag'] and actual_sell_price / buys[idx][0]['buy_price'] >= sell_price_ratio:
+                        #search for sell_flag False nad lowest buy price !!! minimum sell ratio (sell for 6 buy for 5: 6/5=1.2 ratio)
+                        actual_sell_price_ratio = actual_sell_price / buys[idx][0]['buy_price']
+                        print ("Actual price {} / buy price {} = {}".format(actual_sell_price,buys[idx][0]['buy_price'],actual_sell_price_ratio))
+                        if not buys[idx][0]['sell_flag'] and actual_sell_price_ratio >= sell_price_ratio:
                             print("watnt sell:{} last close {}".format(current_product,actual_sell_price))
                             # prepare loop for bid check
                             ready_to_sell = False
