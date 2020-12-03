@@ -284,6 +284,7 @@ def sell_market_size_(response,product_folder,currency):
     r = requests.get(api_url + 'orders/'+id, auth=auth)
     response = r.json()
     pp(response)
+    print("response keys check")
     for key in list(response.keys()):
         if key == 'message':
             print("PROBLEM")
@@ -305,6 +306,7 @@ def sell_market_size_(response,product_folder,currency):
                             print("not correct response {}".format(seq))                  
                             time.sleep(1)
         elif key == 'status':  #'status': 'pending'
+            print("status key found...")
             if response['status'] == 'pending':
                 for seq in range(1800):
                     print("request id again...")
