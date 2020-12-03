@@ -540,10 +540,10 @@ def strategy(data,strategy_data,current_product):
                                     earnValue = earnValue + float(sell_response['executed_value']) - float(sell_response['fill_fees']) - buys[idx][0]['spend_EUR']
                                     buys[idx][0]['sell_flag'] = True  
                                     # buys[idx][0]['sell_price'] = data['close'][i]
-                                    buys[idx][0]['sell_price'] = float(sell_response['executed_value']) / float(sell_response['filled_size'])
+                                    sold_for = buys[idx][0]['sell_price'] = float(sell_response['executed_value']) / float(sell_response['filled_size'])
                                     buys[idx][0]['sell_time'] = str(data.index[i])
                                     buys[idx][0]['earn'] = earnValue
-                                    earn = earn + earnValue
+                                    earn = earn + earnValue                                    
                                     # buys[idx][0]['buy_price'] = 0
                                     # buys[idx][0]['sell_time'] = buys[idx]
                                     #generate sell signlas if sells_not_empty_record is not empty
@@ -573,7 +573,7 @@ def strategy(data,strategy_data,current_product):
                                                 print("-----------------------------------------------------------------------------------------------------------")   
                                         except Exception as e: 
                                             print(e)
-                                    print("SELL {} for={} real= {}".format(current_product,data['close'][i],float(sell_response['executed_value'])))
+                                    print("SELL {} for={} real= {}".format(current_product,sold_for,float(sell_response['executed_value'])))
                                     if there_was_buy_or_sell :
                                         logger.info(" BEFORE RETURN "+current_product+" "+str(buys))
 
