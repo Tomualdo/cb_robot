@@ -530,5 +530,75 @@
             "earn": 0,
             "ooa_buy": true
         }
+    ],
+    "2020-12-01 21:22:00": [
+        {
+            "buy_time": "2020-12-01 21:22:00",
+            "buy_price": 0.15567099999999998,
+            "spend_EUR": 20.081559,
+            "coins": 129.0,
+            "fee": 0.0502038975,
+            "sell_flag": false,
+            "sell_price": 0,
+            "sell_time": 0,
+            "earn": 0,
+            "ooa_buy": false
+        }
+    ],
+    "2020-12-01 23:38:00": [
+        {
+            "buy_time": "2020-12-01 23:38:00",
+            "buy_price": 0.15509599999999998,
+            "spend_EUR": 20.007384,
+            "coins": 129.0,
+            "fee": 0.05001846,
+            "sell_flag": false,
+            "sell_price": 0,
+            "sell_time": 0,
+            "earn": 0,
+            "ooa_buy": false
+        }
+    ],
+    "2020-12-02 00:27:00": [
+        {
+            "buy_time": "2020-12-02 00:27:00",
+            "buy_price": 0.15207099999999998,
+            "spend_EUR": 22.050295,
+            "coins": 145.0,
+            "fee": 0.0551257375,
+            "sell_flag": true,
+            "sell_price": 0.15460200000000002,
+            "sell_time": "2020-12-02 01:46:00",
+            "earn": 0.31095177500000304,
+            "ooa_buy": false
+        }
+    ],
+    "2020-12-02 13:00:00": [
+        {
+            "buy_time": "2020-12-02 13:00:00",
+            "buy_price": 0.154581,
+            "spend_EUR": 20.09553,
+            "coins": 130.0,
+            "fee": 0.050238825,
+            "sell_flag": false,
+            "sell_price": 0,
+            "sell_time": 0,
+            "earn": 0,
+            "ooa_buy": false
+        }
+    ],
+    "2020-12-02 14:40:00": [
+        {
+            "buy_time": "2020-12-02 14:40:00",
+            "buy_price": 0.15404199999999998,
+            "spend_EUR": 20.02546,
+            "coins": 130.0,
+            "fee": 0.05006365,
+            "sell_flag": false,
+            "sell_price": 0,
+            "sell_time": 0,
+            "earn": 0,
+            "ooa_buy": false
+        }
     ]
 }

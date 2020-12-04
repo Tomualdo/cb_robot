@@ -841,5 +841,75 @@
             "earn": 0.19055945999999935,
             "ooa_buy": true
         }
+    ],
+    "2020-12-01 23:10:00": [
+        {
+            "buy_time": "2020-12-01 23:10:00",
+            "buy_price": 26.966700000000003,
+            "spend_EUR": 18.87669,
+            "coins": 0.7,
+            "fee": 0.047191725,
+            "sell_flag": true,
+            "sell_price": 27.5089,
+            "sell_time": "2020-12-03 03:50:00",
+            "earn": 0.3313994249999972,
+            "ooa_buy": false
+        }
+    ],
+    "2020-12-01 23:52:00": [
+        {
+            "buy_time": "2020-12-01 23:52:00",
+            "buy_price": 26.391399999999997,
+            "spend_EUR": 21.11312,
+            "coins": 0.8,
+            "fee": 0.0527828,
+            "sell_flag": true,
+            "sell_price": 27.1313,
+            "sell_time": "2020-12-03 03:06:00",
+            "earn": 0.5376574000000005,
+            "ooa_buy": false
+        }
+    ],
+    "2020-12-02 00:28:00": [
+        {
+            "buy_time": "2020-12-02 00:28:00",
+            "buy_price": 25.9356,
+            "spend_EUR": 20.74848,
+            "coins": 0.8,
+            "fee": 0.0518712,
+            "sell_flag": true,
+            "sell_price": 26.3743,
+            "sell_time": "2020-12-02 02:41:00",
+            "earn": 0.29821139999999957,
+            "ooa_buy": false
+        }
+    ],
+    "2020-12-03 09:40:00": [
+        {
+            "buy_time": "2020-12-03 09:40:00",
+            "buy_price": 26.2155,
+            "spend_EUR": 20.9724,
+            "coins": 0.8,
+            "fee": 0.052431,
+            "sell_flag": true,
+            "sell_price": 26.688,
+            "sell_time": "2020-12-03 13:27:00",
+            "earn": 0.324624,
+            "ooa_buy": false
+        }
+    ],
+    "2020-12-03 20:26:00": [
+        {
+            "buy_time": "2020-12-03 20:26:00",
+            "buy_price": 26.8942,
+            "spend_EUR": 18.82594,
+            "coins": 0.7,
+            "fee": 0.04706485,
+            "sell_flag": false,
+            "sell_price": 0,
+            "sell_time": 0,
+            "earn": 0,
+            "ooa_buy": false
+        }
     ]
 }
