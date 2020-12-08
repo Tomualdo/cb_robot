@@ -83,7 +83,7 @@ def ledger_info(current_product,days=0):
     dic_coins[current_product] = remain_coins
 
     dic_value[current_product] = remain_coins * load_last_close(current_product)
-    dic_profit_loss[current_product] = remain_spend + remain_spend_ooa - remain_coins * load_last_close(current_product)
+    dic_profit_loss[current_product] = (remain_spend + remain_spend_ooa) - (remain_coins * load_last_close(current_product))
     # print()
     
     today_total += today_earn
