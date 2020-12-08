@@ -30,6 +30,8 @@ products = [
 ROOT_DIR = os.path.abspath(os.curdir)
 
 today_total = 0
+today_value = 0
+total_invested = 0
 dic={}
 dic_spend_EUR={}
 dic_spend_EUR_ooa={}
@@ -40,6 +42,8 @@ dic_profit_loss={}
 
 def ledger_info(current_product,days=0):
     global today_total
+    global today_value
+    global total_invested
     global dic
     product_folder = ROOT_DIR+'/'+current_product
     # check if file exitst
@@ -56,8 +60,6 @@ def ledger_info(current_product,days=0):
     today_earn = 0
     remain_spend = 0
     remain_spend_ooa = 0
-    holdings_value = 0
-    holdings_value_ooa = 0
     
     for records in ledger:
         if ledger[records][0]['sell_flag'] == False:
@@ -87,6 +89,9 @@ def ledger_info(current_product,days=0):
     # print()
     
     today_total += today_earn
+    today_value += remain_coins * load_last_close(current_product) - (remain_spend + remain_spend_ooa)
+    total_invested += remain_spend + remain_spend_ooa
+
 
 def load_last_close(current_product):
     product_folder = ROOT_DIR+'/'+current_product
@@ -146,4 +151,6 @@ dic_profit_loss = sorted(dic_profit_loss.items(),key=lambda x:x[1])
 print("PROFIT/LOSS:")
 pp(dic_profit_loss)
 
-print("Days {} total earn is: {} eur".format(days,today_total))
+print("Days {} total earn is: {} e".format(days,today_total))
+print("Profit / Loss {} e".format(today_value))
+print("Inveted {} e".format(total_invested))
