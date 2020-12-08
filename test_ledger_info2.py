@@ -153,4 +153,4 @@ pp(dic_profit_loss)
 
 print("Days {} total earn is: {} e".format(days,today_total))
 print("Profit / Loss {} e".format(today_value))
-print("Inveted {} e".format(total_invested))
+print("Invested {} e vs. actual {}".format(total_invested,total_invested-today_value))
