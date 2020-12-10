@@ -489,8 +489,11 @@ def strategy(data,strategy_data,current_product):
                     if sells_not_empty_record == []:
                         break
                     for idx in sells_not_empty_record:
+                        if forced_sell:
+                            actual_sell_price = data['close'][i]
+                            sell_price_ratio = actual_sell_price / buys[idx][0]['buy_price']
                         # minimu for fee cashback is 1.005
-                        if sell_out_of_bounds:
+                        elif sell_out_of_bounds:
                             if 'ooa_buy' in buys[idx][0]: # key exist
                                 if buys[idx][0]['ooa_buy']: # if True
                                     sell_price_ratio = ooa_out_of_bound_sell_ratio
@@ -508,7 +511,7 @@ def strategy(data,strategy_data,current_product):
                                     sell_price_ratio = sell_ratio
                             else:
                                 sell_price_ratio = sell_ratio
-                            actual_sell_price = data['close'][i]
+                        actual_sell_price = data['close'][i]
 
                         #search for sell_flag False nad lowest buy price !!! minimum sell ratio (sell for 6 buy for 5: 6/5=1.2 ratio)
                         actual_sell_price_ratio = actual_sell_price / buys[idx][0]['buy_price']
