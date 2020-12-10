@@ -408,7 +408,7 @@ def strategy(data,strategy_data,current_product):
 
         there_was_buy_or_sell = False
 
-        test_sell = True
+        test_sell = False
 
         # main Loop
         for i in range(len(data['close'])):
