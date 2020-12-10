@@ -408,6 +408,8 @@ def strategy(data,strategy_data,current_product):
 
         there_was_buy_or_sell = False
 
+        test_sell = True
+
         # main Loop
         for i in range(len(data['close'])):
 
@@ -465,7 +467,7 @@ def strategy(data,strategy_data,current_product):
                     forced_rewrite(current_product)
                     break
             #SELL-------------------------------------------------------------------------------------------------
-            if data['close'][i] > data['upper'][i] or sell_out_of_bounds or True: 
+            if data['close'][i] > data['upper'][i] or sell_out_of_bounds or test_sell: 
                 # if str(data.index[i]) not in buys:
                 #   buys[str(data.index[i])] = []
                 #look if there are some records in buys dict
