@@ -8,9 +8,9 @@
     "base_min_size": 1,
     "sell_ratio": 9.1,
     "out_of_bound_sell_ratio": 9.016,
-    "min_buy_time_minutes": 2880,
+    "min_buy_time_minutes": 10080,
     "max_time_better_price": 480,
-    "min_buy_time_buy_ratio": 1.02,
+    "min_buy_time_buy_ratio": 1.05,
     "min_ballance_buy": 60,
     "EUR_to_buy_size": 25,
     "forced_buy": false,
@@ -19,7 +19,7 @@
     "ooa_max_buys": 14,
     "ooa_sell_ratio": 9.1,
     "ooa_out_of_bound_sell_ratio": 9.015,
-    "ooa_min_buy_time_minutes": 2880,
+    "ooa_min_buy_time_minutes": 10080,
     "ooa_max_time_better_price": 120,
-    "ooa_min_buy_time_buy_ratio": 1.013
+    "ooa_min_buy_time_buy_ratio": 1.05
 }

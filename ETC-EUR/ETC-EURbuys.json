@@ -729,7 +729,7 @@
         {
             "buy_time": "2020-11-25 20:41:00",
             "buy_price": 6.201999999999999,
-            "spend_EUR": 27.2888,
+            "spend_EUR": 60.237,
             "coins": 9.7,
             "fee": 0.0955108,
             "sell_flag": false,
@@ -1054,6 +1054,20 @@
             "spend_EUR": 20.1021,
             "coins": 3.7,
             "fee": 0.05025525,
+            "sell_flag": false,
+            "sell_price": 0,
+            "sell_time": 0,
+            "earn": 0,
+            "ooa_buy": false
+        }
+    ],
+    "2020-12-04 11:04:00": [
+        {
+            "buy_time": "2020-12-04 11:04:00",
+            "buy_price": 5.357,
+            "spend_EUR": 19.8209,
+            "coins": 3.7,
+            "fee": 0.04955225,
             "sell_flag": false,
             "sell_price": 0,
             "sell_time": 0,

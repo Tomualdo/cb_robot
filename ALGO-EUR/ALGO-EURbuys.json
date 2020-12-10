@@ -1258,5 +1258,33 @@
             "earn": 0.2340555000000002,
             "ooa_buy": true
         }
+    ],
+    "2020-12-07 18:33:00": [
+        {
+            "buy_time": "2020-12-07 18:33:00",
+            "buy_price": 0.2771,
+            "spend_EUR": 19.9512,
+            "coins": 72.0,
+            "fee": 0.049878,
+            "sell_flag": false,
+            "sell_price": 0,
+            "sell_time": 0,
+            "earn": 0,
+            "ooa_buy": false
+        }
+    ],
+    "2020-12-08 06:08:00": [
+        {
+            "buy_time": "2020-12-08 06:08:00",
+            "buy_price": 0.2689,
+            "spend_EUR": 19.8986,
+            "coins": 74.0,
+            "fee": 0.0497465,
+            "sell_flag": false,
+            "sell_price": 0,
+            "sell_time": 0,
+            "earn": 0,
+            "ooa_buy": false
+        }
     ]
 }
