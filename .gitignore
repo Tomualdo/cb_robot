@@ -11,3 +11,4 @@ authorize_coinbase.py
 *.log
 rtvs-dl.sh
 .pyc
+.code-workspace
