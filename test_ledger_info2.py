@@ -6,6 +6,7 @@ from datetime import datetime, timedelta
 import dateutil.parser
 import sys
 import natsort
+from portfolio2 import get_ballance
 
 current_product = 'ETC-EUR'
 products = [
@@ -154,3 +155,5 @@ pp(dic_profit_loss)
 print("Days {} total earn is: {} e".format(days,today_total))
 print("Profit / Loss {} e".format(today_value))
 print("Invested {} e vs. actual {}".format(total_invested,total_invested + today_value))
+bal = round(float(get_ballance()),2)
+print("free {} e || total funds if folio {}".format(bal,total_invested + bal))
