@@ -454,10 +454,10 @@
             "spend_EUR": 14.596,
             "coins": 0.2,
             "fee": 0.03649,
-            "sell_flag": false,
-            "sell_price": 0,
-            "sell_time": 0,
-            "earn": 0,
+            "sell_flag": true,
+            "sell_price": 67.07,
+            "sell_time": "2020-12-14 09:14:00",
+            "earn": -1.215535000000001,
             "ooa_buy": true
         }
     ],
@@ -468,10 +468,10 @@
             "spend_EUR": 14.558,
             "coins": 0.2,
             "fee": 0.036395,
-            "sell_flag": false,
-            "sell_price": 0,
-            "sell_time": 0,
-            "earn": 0,
+            "sell_flag": true,
+            "sell_price": 67.07,
+            "sell_time": "2020-12-14 09:14:00",
+            "earn": -1.1775350000000007,
             "ooa_buy": true
         }
     ],
@@ -496,10 +496,10 @@
             "spend_EUR": 14.426,
             "coins": 0.2,
             "fee": 0.036065,
-            "sell_flag": false,
-            "sell_price": 0,
-            "sell_time": 0,
-            "earn": 0,
+            "sell_flag": true,
+            "sell_price": 67.07,
+            "sell_time": "2020-12-14 09:14:00",
+            "earn": -1.045535000000001,
             "ooa_buy": true
         }
     ],
@@ -524,10 +524,24 @@
             "spend_EUR": 20.787,
             "coins": 0.3,
             "fee": 0.0519675,
-            "sell_flag": false,
-            "sell_price": 0,
-            "sell_time": 0,
-            "earn": 0,
+            "sell_flag": true,
+            "sell_price": 67.07,
+            "sell_time": "2020-12-14 09:14:00",
+            "earn": -0.7163025000000012,
+            "ooa_buy": false
+        }
+    ],
+    "2020-12-10 22:55:00": [
+        {
+            "buy_time": "2020-12-10 22:55:00",
+            "buy_price": 61.75,
+            "spend_EUR": 18.525,
+            "coins": 0.3,
+            "fee": 0.0463125,
+            "sell_flag": true,
+            "sell_price": 62.79,
+            "sell_time": "2020-12-12 12:37:00",
+            "earn": 0.26490749999999963,
             "ooa_buy": false
         }
     ]
