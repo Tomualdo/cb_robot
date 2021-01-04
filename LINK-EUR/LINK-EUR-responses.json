@@ -1259,5 +1259,25 @@
         "executed_value": "19.6945740000000000",
         "status": "done",
         "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "cddfdb14-1ad5-49d2-bcc7-f75ad8e09f78",
+        "size": "1.80000000",
+        "product_id": "LINK-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-04T06:01:14.301296Z",
+        "done_at": "2021-01-04T06:01:14.314Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0727552350000000",
+        "filled_size": "1.80000000",
+        "executed_value": "20.7872100000000000",
+        "status": "done",
+        "settled": true
     }
 ]

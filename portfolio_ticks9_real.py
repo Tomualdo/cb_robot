@@ -931,7 +931,7 @@ def on_open(ws):
                 "product_ids":
                 [
                     "OMG-EUR",
-                    "XRP-EUR",
+                    
                     "XTZ-EUR",
                     "UMA-EUR",
                     "CGLD-EUR",
