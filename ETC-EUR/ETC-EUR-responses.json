@@ -4160,5 +4160,42 @@
         "executed_value": "12.2568666815300000",
         "status": "done",
         "settled": true
+    },
+    {
+        "id": "d2e993cf-f64e-4c7c-b892-f82f28b79ba4",
+        "size": "2.3",
+        "product_id": "ETC-EUR",
+        "side": "buy",
+        "stp": "dc",
+        "funds": "162.09754743",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-04T09:31:07.40759Z",
+        "fill_fees": "0",
+        "filled_size": "0",
+        "executed_value": "0",
+        "status": "pending",
+        "settled": false
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "d2e993cf-f64e-4c7c-b892-f82f28b79ba4",
+        "size": "2.30000000",
+        "product_id": "ETC-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "buy",
+        "funds": "162.0975474300000000",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-04T09:31:07.40759Z",
+        "done_at": "2021-01-04T09:31:07.434Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0410550000000000",
+        "filled_size": "2.30000000",
+        "executed_value": "11.7300000000000000",
+        "status": "done",
+        "settled": true
     }
 ]

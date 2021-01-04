@@ -3812,5 +3812,79 @@
         "executed_value": "20.4042000000000000",
         "status": "done",
         "settled": true
+    },
+    {
+        "id": "07cae928-f838-4396-8cd1-14b50cb15895",
+        "size": "9.6",
+        "product_id": "EOS-EUR",
+        "side": "buy",
+        "stp": "dc",
+        "funds": "150.3675",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-04T09:31:13.459901Z",
+        "fill_fees": "0",
+        "filled_size": "0",
+        "executed_value": "0",
+        "status": "pending",
+        "settled": false
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "07cae928-f838-4396-8cd1-14b50cb15895",
+        "size": "9.60000000",
+        "product_id": "EOS-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "buy",
+        "funds": "150.3675000000000000",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-04T09:31:13.459901Z",
+        "done_at": "2021-01-04T09:31:13.486Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0713328000000000",
+        "filled_size": "9.60000000",
+        "executed_value": "20.3808000000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "id": "e9e543e9-b7cc-483b-a87f-e1d8ea565d70",
+        "size": "10.6",
+        "product_id": "EOS-EUR",
+        "side": "buy",
+        "stp": "dc",
+        "funds": "56.9898",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-04T09:36:28.697551Z",
+        "fill_fees": "0",
+        "filled_size": "0",
+        "executed_value": "0",
+        "status": "pending",
+        "settled": false
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "e9e543e9-b7cc-483b-a87f-e1d8ea565d70",
+        "size": "10.60000000",
+        "product_id": "EOS-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "buy",
+        "funds": "56.9898000000000000",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-04T09:36:28.697551Z",
+        "done_at": "2021-01-04T09:36:28.733Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0778358000000000",
+        "filled_size": "10.60000000",
+        "executed_value": "22.2388000000000000",
+        "status": "done",
+        "settled": true
     }
 ]

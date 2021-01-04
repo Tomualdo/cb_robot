@@ -1468,5 +1468,19 @@
             "earn": 0,
             "ooa_buy": true
         }
+    ],
+    "2021-01-04 10:37:00": [
+        {
+            "buy_time": "2021-01-04 10:37:00",
+            "buy_price": 6.547,
+            "spend_EUR": 20.2957,
+            "coins": 3.1,
+            "fee": 0.07103495,
+            "sell_flag": false,
+            "sell_price": 0,
+            "sell_time": 0,
+            "earn": 0,
+            "ooa_buy": false
+        }
     ]
 }
