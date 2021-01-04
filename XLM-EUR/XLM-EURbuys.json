@@ -776,10 +776,10 @@
             "spend_EUR": 19.994364,
             "coins": 188.0,
             "fee": 0.069980274,
-            "sell_flag": false,
-            "sell_price": 0,
-            "sell_time": 0,
-            "earn": 0,
+            "sell_flag": true,
+            "sell_price": 0.10830200000000001,
+            "sell_time": "2021-01-04 12:54:00",
+            "earn": 0.29514928400000073,
             "ooa_buy": false
         }
     ]

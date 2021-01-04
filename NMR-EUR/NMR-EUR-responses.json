@@ -4293,5 +4293,22 @@
         "executed_value": "20.4247986000000000",
         "status": "done",
         "settled": true
+    },
+    {
+        "id": "f065aef6-4205-4156-ab29-308fdb235b58",
+        "size": "1.10000000",
+        "product_id": "NMR-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-04T13:09:46.610301Z",
+        "done_at": "2021-01-04T13:09:46.62Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0726974160500000",
+        "filled_size": "1.10000000",
+        "executed_value": "20.7706903000000000",
+        "status": "done",
+        "settled": true
     }
 ]

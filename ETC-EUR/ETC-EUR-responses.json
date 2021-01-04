@@ -4197,5 +4197,22 @@
         "executed_value": "11.7300000000000000",
         "status": "done",
         "settled": true
+    },
+    {
+        "id": "bb89a913-a229-4037-a274-79fb1a36c29a",
+        "size": "2.30000000",
+        "product_id": "ETC-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-04T10:49:05.408775Z",
+        "done_at": "2021-01-04T10:49:05.431Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0418036500000000",
+        "filled_size": "2.30000000",
+        "executed_value": "11.9439000000000000",
+        "status": "done",
+        "settled": true
     }
 ]

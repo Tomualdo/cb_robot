@@ -4626,5 +4626,42 @@
         "executed_value": "22.0120360000000000",
         "status": "done",
         "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "a5c64c7f-9d24-46a7-9e4e-a5f94fffb3e1",
+        "size": "77.20000000",
+        "product_id": "ZRX-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-04T10:39:25.632137Z",
+        "done_at": "2021-01-04T10:39:25.707Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0782858566000000",
+        "filled_size": "77.20000000",
+        "executed_value": "22.3673876000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "id": "4f55d6b0-114b-4d20-966d-9e4f2ce717eb",
+        "size": "68.50000000",
+        "product_id": "ZRX-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-04T11:03:49.979145Z",
+        "done_at": "2021-01-04T11:03:49.988Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0721657090000000",
+        "filled_size": "68.50000000",
+        "executed_value": "20.6187740000000000",
+        "status": "done",
+        "settled": true
     }
 ]
