@@ -2842,5 +2842,82 @@
         "executed_value": "20.3607760000000000",
         "status": "done",
         "settled": true
+    },
+    {
+        "id": "889441a9-74f4-45d7-8322-8230ac7d6a05",
+        "size": "146.00000000",
+        "product_id": "XLM-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-05T10:17:06.369595Z",
+        "done_at": "2021-01-05T10:17:06.374Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0724414040000000",
+        "filled_size": "146.00000000",
+        "executed_value": "20.6975440000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "96f11ee3-3799-4441-b12b-ca5edc74d990",
+        "size": "138.00000000",
+        "product_id": "XLM-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-05T15:42:05.95353Z",
+        "done_at": "2021-01-05T15:42:05.975Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0722263710000000",
+        "filled_size": "138.00000000",
+        "executed_value": "20.6361060000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "7d46677c-5f97-436e-833f-f2a94af04788",
+        "size": "79.00000000",
+        "product_id": "XLM-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-05T16:01:09.603103Z",
+        "done_at": "2021-01-05T16:01:09.633Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0428046885000000",
+        "filled_size": "79.00000000",
+        "executed_value": "12.2299110000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "16efc300-e7ad-41a8-b3c5-16003b8bcea4",
+        "size": "72.00000000",
+        "product_id": "XLM-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-06T00:37:13.770359Z",
+        "done_at": "2021-01-06T00:37:13.794Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0429448320000000",
+        "filled_size": "72.00000000",
+        "executed_value": "12.2699520000000000",
+        "status": "done",
+        "settled": true
     }
 ]

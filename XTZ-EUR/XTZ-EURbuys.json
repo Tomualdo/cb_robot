@@ -1352,10 +1352,10 @@
             "spend_EUR": 12.122612,
             "coins": 6.2,
             "fee": 0.03030653,
-            "sell_flag": false,
-            "sell_price": 0,
-            "sell_time": 0,
-            "earn": 0,
+            "sell_flag": true,
+            "sell_price": 1.9947954838709676,
+            "sell_time": "2021-01-05 18:38:00",
+            "earn": 0.2018329380000008,
             "ooa_buy": true
         }
     ],
@@ -1366,10 +1366,10 @@
             "spend_EUR": 20.06421,
             "coins": 10.6,
             "fee": 0.070224735,
-            "sell_flag": false,
-            "sell_price": 0,
-            "sell_time": 0,
-            "earn": 0,
+            "sell_flag": true,
+            "sell_price": 1.925793283018868,
+            "sell_time": "2021-01-05 01:09:00",
+            "earn": 0.2777518691999994,
             "ooa_buy": false
         }
     ]

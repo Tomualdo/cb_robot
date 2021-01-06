@@ -6156,5 +6156,102 @@
         "executed_value": "11.8797300000000000",
         "status": "done",
         "settled": true
+    },
+    {
+        "id": "b5f592c9-3bb5-4373-ac08-ade31df406f0",
+        "size": "2.3",
+        "product_id": "BAND-EUR",
+        "side": "buy",
+        "stp": "dc",
+        "funds": "304.804169",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-05T04:13:06.224552Z",
+        "fill_fees": "0",
+        "filled_size": "0",
+        "executed_value": "0",
+        "status": "pending",
+        "settled": false
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "b5f592c9-3bb5-4373-ac08-ade31df406f0",
+        "size": "2.30000000",
+        "product_id": "BAND-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "buy",
+        "funds": "304.8041690000000000",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-05T04:13:06.224552Z",
+        "done_at": "2021-01-05T04:13:06.253Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0421586550000000",
+        "filled_size": "2.30000000",
+        "executed_value": "12.0453300000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "7a08fb6e-6dd9-4c61-b875-945380f9dbdb",
+        "size": "2.30000000",
+        "product_id": "BAND-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-05T08:36:15.626548Z",
+        "done_at": "2021-01-05T08:36:15.641Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0428324400000000",
+        "filled_size": "2.30000000",
+        "executed_value": "12.2378400000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "9793ca2c-0662-459e-a2bd-2884eb6f8010",
+        "size": "2.10000000",
+        "product_id": "BAND-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-05T15:52:15.197937Z",
+        "done_at": "2021-01-05T15:52:15.213Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0424705050000000",
+        "filled_size": "2.10000000",
+        "executed_value": "12.1344300000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "ad5c9dda-ea0a-4926-b748-5f224afd8fe1",
+        "size": "2.00000000",
+        "product_id": "BAND-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-05T16:27:14.043799Z",
+        "done_at": "2021-01-05T16:27:14.077Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0414547000000000",
+        "filled_size": "2.00000000",
+        "executed_value": "11.8442000000000000",
+        "status": "done",
+        "settled": true
     }
 ]

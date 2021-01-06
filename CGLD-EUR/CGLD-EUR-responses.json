@@ -6476,5 +6476,179 @@
         "executed_value": "12.4361300000000000",
         "status": "done",
         "settled": true
+    },
+    {
+        "id": "15bcbc5e-5227-4e20-b7aa-d3579d8ee8ad",
+        "size": "9.9",
+        "product_id": "CGLD-EUR",
+        "side": "buy",
+        "stp": "dc",
+        "funds": "292.732204",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-04T17:43:07.118675Z",
+        "fill_fees": "0",
+        "filled_size": "0",
+        "executed_value": "0",
+        "status": "pending",
+        "settled": false
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "15bcbc5e-5227-4e20-b7aa-d3579d8ee8ad",
+        "size": "9.90000000",
+        "product_id": "CGLD-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "buy",
+        "funds": "292.7322040000000000",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-04T17:43:07.118675Z",
+        "done_at": "2021-01-04T17:43:07.146Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0421586550000000",
+        "filled_size": "9.90000000",
+        "executed_value": "12.0453300000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "f2aa6455-ede2-48ff-8501-f99c08c3e51e",
+        "size": "9.90000000",
+        "product_id": "CGLD-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-04T20:50:11.464674Z",
+        "done_at": "2021-01-04T20:50:11.477Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0429239335000000",
+        "filled_size": "9.90000000",
+        "executed_value": "12.2639810000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "id": "0375df63-2499-467f-8048-1ff780dac22f",
+        "size": "9.8",
+        "product_id": "CGLD-EUR",
+        "side": "buy",
+        "stp": "dc",
+        "funds": "316.911315",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-04T22:20:28.934246Z",
+        "fill_fees": "0",
+        "filled_size": "0",
+        "executed_value": "0",
+        "status": "pending",
+        "settled": false
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "0375df63-2499-467f-8048-1ff780dac22f",
+        "size": "9.80000000",
+        "product_id": "CGLD-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "buy",
+        "funds": "316.9113150000000000",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-04T22:20:28.934246Z",
+        "done_at": "2021-01-04T22:20:28.943Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0420826700000000",
+        "filled_size": "9.80000000",
+        "executed_value": "12.0236200000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "04604229-6ed0-45b5-a05e-25bc3182495e",
+        "size": "9.80000000",
+        "product_id": "CGLD-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-05T00:36:24.936035Z",
+        "done_at": "2021-01-05T00:36:24.966Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0429641800000000",
+        "filled_size": "9.80000000",
+        "executed_value": "12.2754800000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "19076fa7-078b-40a1-a624-e296d052ea70",
+        "size": "14.50000000",
+        "product_id": "CGLD-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-05T03:40:15.640068Z",
+        "done_at": "2021-01-05T03:40:15.673Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0759676750000000",
+        "filled_size": "14.50000000",
+        "executed_value": "21.7050500000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "03859e4d-13ad-4a16-84fc-603b40b58eb5",
+        "size": "8.10000000",
+        "product_id": "CGLD-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-05T04:00:05.37173Z",
+        "done_at": "2021-01-05T04:00:05.416Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0497655900000000",
+        "filled_size": "8.10000000",
+        "executed_value": "14.2187400000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "c0b02837-0cb7-48b8-96df-5d145b30c6b8",
+        "size": "0.20000000",
+        "product_id": "CGLD-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-05T05:52:02.442592Z",
+        "done_at": "2021-01-05T05:52:02.477Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0015687700000000",
+        "filled_size": "0.20000000",
+        "executed_value": "0.4482200000000000",
+        "status": "done",
+        "settled": true
     }
 ]

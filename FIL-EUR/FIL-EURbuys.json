@@ -1,0 +1,72 @@
+{
+    "2021-01-04 21:46:00": [
+        {
+            "buy_time": "2021-01-04 21:46:00",
+            "buy_price": 17.1976,
+            "spend_EUR": 20.63712,
+            "coins": 1.2,
+            "fee": 0.07222992,
+            "sell_flag": true,
+            "sell_price": 17.910400000000003,
+            "sell_time": "2021-01-05 13:34:00",
+            "earn": 0.7801363200000004,
+            "ooa_buy": false
+        }
+    ],
+    "2021-01-05 03:22:00": [
+        {
+            "buy_time": "2021-01-05 03:22:00",
+            "buy_price": 17.2221,
+            "spend_EUR": 20.66652,
+            "coins": 1.2,
+            "fee": 0.07233282,
+            "sell_flag": true,
+            "sell_price": 17.913700000000002,
+            "sell_time": "2021-01-05 13:34:00",
+            "earn": 0.7546824600000015,
+            "ooa_buy": false
+        }
+    ],
+    "2021-01-05 14:59:00": [
+        {
+            "buy_time": "2021-01-05 14:59:00",
+            "buy_price": 17.6088,
+            "spend_EUR": 19.36968,
+            "coins": 1.1,
+            "fee": 0.06779388,
+            "sell_flag": true,
+            "sell_price": 18.135499999999997,
+            "sell_time": "2021-01-05 17:06:00",
+            "earn": 0.5095483250000008,
+            "ooa_buy": false
+        }
+    ],
+    "2021-01-05 19:23:00": [
+        {
+            "buy_time": "2021-01-05 19:23:00",
+            "buy_price": 17.7156,
+            "spend_EUR": 19.48716,
+            "coins": 1.1,
+            "fee": 0.06820506,
+            "sell_flag": false,
+            "sell_price": 0,
+            "sell_time": 0,
+            "earn": 0,
+            "ooa_buy": false
+        }
+    ],
+    "2021-01-05 20:23:00": [
+        {
+            "buy_time": "2021-01-05 20:23:00",
+            "buy_price": 17.571499999999997,
+            "spend_EUR": 19.32865,
+            "coins": 1.1,
+            "fee": 0.067650275,
+            "sell_flag": false,
+            "sell_price": 0,
+            "sell_time": 0,
+            "earn": 0,
+            "ooa_buy": false
+        }
+    ]
+}

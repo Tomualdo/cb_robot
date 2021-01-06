@@ -5403,5 +5403,45 @@
         "executed_value": "20.0642100000000000",
         "status": "done",
         "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "466e9bb8-4233-4fbc-b54e-fde0fa3aad5d",
+        "size": "10.60000000",
+        "product_id": "XTZ-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-05T00:11:05.490758Z",
+        "done_at": "2021-01-05T00:11:05.527Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0714469308000000",
+        "filled_size": "10.60000000",
+        "executed_value": "20.4134088000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "d61444ef-2da0-4813-a0fe-263244e6231a",
+        "size": "6.20000000",
+        "product_id": "XTZ-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-05T17:40:10.908837Z",
+        "done_at": "2021-01-05T17:40:10.917Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0432870620000000",
+        "filled_size": "6.20000000",
+        "executed_value": "12.3677320000000000",
+        "status": "done",
+        "settled": true
     }
 ]
