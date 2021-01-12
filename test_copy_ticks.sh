@@ -21,5 +21,5 @@ do
     #ls ${i}/data* | sort -n | tail -n 1
     #/home/tom/Documents/coinbase_test/XRP-EUR/dataXRP-EUR20210104.json
     
-    cp -v `ls ${i}/data* | sort -n | tail -n 1` ~/coin1/coinbase_test/${i#/*/*/*/*/}
+    cp -v `ls ${i}/data* | sort -n | tail -n 5` ~/coin1/coinbase_test/${i#/*/*/*/*/}
 done
