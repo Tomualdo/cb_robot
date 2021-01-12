@@ -6650,5 +6650,79 @@
         "executed_value": "0.4482200000000000",
         "status": "done",
         "settled": true
+    },
+    {
+        "id": "ed51ddf2-9a44-4726-9e61-cd6146fa9c47",
+        "size": "10.9",
+        "product_id": "CGLD-EUR",
+        "side": "buy",
+        "stp": "dc",
+        "funds": "352.496316",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-10T05:28:21.611419Z",
+        "fill_fees": "0",
+        "filled_size": "0",
+        "executed_value": "0",
+        "status": "pending",
+        "settled": false
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "ed51ddf2-9a44-4726-9e61-cd6146fa9c47",
+        "size": "10.90000000",
+        "product_id": "CGLD-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "buy",
+        "funds": "352.4963160000000000",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-10T05:28:21.611419Z",
+        "done_at": "2021-01-10T05:28:21.624Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0698602800000000",
+        "filled_size": "10.90000000",
+        "executed_value": "19.9600800000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "id": "b8b98f79-f16d-42f5-a1b0-360969c06d73",
+        "size": "10.9",
+        "product_id": "CGLD-EUR",
+        "side": "buy",
+        "stp": "dc",
+        "funds": "397.996096",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-10T08:38:07.909164Z",
+        "fill_fees": "0",
+        "filled_size": "0",
+        "executed_value": "0",
+        "status": "pending",
+        "settled": false
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "b8b98f79-f16d-42f5-a1b0-360969c06d73",
+        "size": "10.90000000",
+        "product_id": "CGLD-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "buy",
+        "funds": "397.9960960000000000",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-10T08:38:07.909164Z",
+        "done_at": "2021-01-10T08:38:07.92Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0698679100000000",
+        "filled_size": "10.90000000",
+        "executed_value": "19.9622600000000000",
+        "status": "done",
+        "settled": true
     }
 ]

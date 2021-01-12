@@ -1916,5 +1916,75 @@
             "earn": 0.16424600000000034,
             "ooa_buy": true
         }
+    ],
+    "2021-01-10 04:49:00": [
+        {
+            "buy_time": "2021-01-10 04:49:00",
+            "buy_price": 0.39640000000000003,
+            "spend_EUR": 19.82,
+            "coins": 50.0,
+            "fee": 0.06937,
+            "sell_flag": true,
+            "sell_price": 0.4048,
+            "sell_time": "2021-01-10 06:10:00",
+            "earn": 0.3491599999999977,
+            "ooa_buy": false
+        }
+    ],
+    "2021-01-10 10:18:00": [
+        {
+            "buy_time": "2021-01-10 10:18:00",
+            "buy_price": 0.4138,
+            "spend_EUR": 12.0002,
+            "coins": 29.0,
+            "fee": 0.0420007,
+            "sell_flag": false,
+            "sell_price": 0,
+            "sell_time": 0,
+            "earn": 0,
+            "ooa_buy": true
+        }
+    ],
+    "2021-01-10 10:57:00": [
+        {
+            "buy_time": "2021-01-10 10:57:00",
+            "buy_price": 0.4077,
+            "spend_EUR": 19.9773,
+            "coins": 49.0,
+            "fee": 0.06992055,
+            "sell_flag": false,
+            "sell_price": 0,
+            "sell_time": 0,
+            "earn": 0,
+            "ooa_buy": false
+        }
+    ],
+    "2021-01-10 11:19:00": [
+        {
+            "buy_time": "2021-01-10 11:19:00",
+            "buy_price": 0.4018,
+            "spend_EUR": 22.099,
+            "coins": 55.0,
+            "fee": 0.0773465,
+            "sell_flag": false,
+            "sell_price": 0,
+            "sell_time": 0,
+            "earn": 0,
+            "ooa_buy": false
+        }
+    ],
+    "2021-01-10 11:26:00": [
+        {
+            "buy_time": "2021-01-10 11:26:00",
+            "buy_price": 0.3916,
+            "spend_EUR": 21.9296,
+            "coins": 56.0,
+            "fee": 0.0767536,
+            "sell_flag": false,
+            "sell_price": 0,
+            "sell_time": 0,
+            "earn": 0,
+            "ooa_buy": false
+        }
     ]
 }
