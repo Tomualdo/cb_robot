@@ -60,31 +60,51 @@ def json_data_merge(older_json,newer_json,current_product):
     return old
 
 def get_calc_minSize(current_product,eur=10):
-    if current_product == 'BTC-EUR':
-        return 0.001
+    # if current_product == 'BTC-EUR':
+    #     return 0.001
     # get last close price from data
     data = load_candle_data_days(current_product,1)
     last_price = (data[current_product][-1]['close'])
     calc = eur / float(last_price)
-    if current_product == 'ALGO-EUR':
-        return round(float(calc),0)
+    # get info about product
+    minsize = get_product(current_product)
+    pp(minsize)
+    data_minsize = float(minsize['base_min_size'])
 
-    elif current_product == 'XLM-EUR':
-        return round(float(calc),0)
-        
+    if calc < data_minsize:
+        return data_minsize
     else:
         return round(float(calc),1)
+
+    # if current_product == 'ALGO-EUR':
+    #     return round(float(calc),0)
+
+    # elif current_product == 'XLM-EUR':
+    #     return round(float(calc),0)
+        
+    # else:
+    #     return round(float(calc),1)
 
 def get_calc_minSize_over_C_avg(current_product,act_calc_size,strategy_data):
     """Calculate size if buy signal is over than C-AVG level
     Main intention is to buy for not full price"""
-    if current_product == 'BTC-EUR':
-        return 0.001
+
+    minsize = get_product(current_product)
+    pp(minsize)
+    data_minsize = float(minsize['base_min_size'])
     ooa_buy_size_ratio = strategy_data['ooa_buy_size_ratio']
-    if current_product == 'ALGO-EUR' or current_product == 'XLM-EUR':
-        return round(float(act_calc_size * ooa_buy_size_ratio),0)
+    if act_calc_size < data_minsize:
+        return data_minsize
     else:
         return round(float(act_calc_size * ooa_buy_size_ratio),1)
+
+    # if current_product == 'BTC-EUR':
+    #     return 0.001
+    # ooa_buy_size_ratio = strategy_data['ooa_buy_size_ratio']
+    # if current_product == 'ALGO-EUR' or current_product == 'XLM-EUR':
+    #     return round(float(act_calc_size * ooa_buy_size_ratio),0)
+    # else:
+    #     return round(float(act_calc_size * ooa_buy_size_ratio),1)
 
 def json_strategy_file_handle(current_product,product_folder):
     # load strategy JSON
