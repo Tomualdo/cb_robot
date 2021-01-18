@@ -1,0 +1,56 @@
+[
+    {
+        "id": "3ab897ab-1fbe-4da3-a15a-50d679123757",
+        "size": "4.1",
+        "product_id": "BNT-EUR",
+        "side": "buy",
+        "stp": "dc",
+        "funds": "342.69280099",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-18T11:09:30.94975Z",
+        "fill_fees": "0",
+        "filled_size": "0",
+        "executed_value": "0",
+        "status": "pending",
+        "settled": false
+    },
+    {
+        "id": "3ab897ab-1fbe-4da3-a15a-50d679123757",
+        "size": "4.10000000",
+        "product_id": "BNT-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "buy",
+        "funds": "342.6928009900000000",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-18T11:09:30.94975Z",
+        "done_at": "2021-01-18T11:09:30.983Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0210399700000000",
+        "filled_size": "4.10000000",
+        "executed_value": "6.0114200000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "c8f87ff0-0f6b-4057-b131-d034fac00613",
+        "size": "4.10000000",
+        "product_id": "BNT-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-18T12:16:31.157355Z",
+        "done_at": "2021-01-18T12:16:31.179Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0213886750000000",
+        "filled_size": "4.10000000",
+        "executed_value": "6.1110500000000000",
+        "status": "done",
+        "settled": true
+    }
+]

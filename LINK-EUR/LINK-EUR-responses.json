@@ -1587,5 +1587,45 @@
         "executed_value": "22.6173600000000000",
         "status": "done",
         "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "5844f783-b1fd-4080-8bfb-3e7adb77a79c",
+        "size": "1.60000000",
+        "product_id": "LINK-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-14T23:06:12.514593Z",
+        "done_at": "2021-01-14T23:06:12.523Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0803412960000000",
+        "filled_size": "1.60000000",
+        "executed_value": "22.9546560000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "0fb58201-fbd4-4389-a8da-1cf105d83c56",
+        "size": "1.40000000",
+        "product_id": "LINK-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-14T23:55:04.261166Z",
+        "done_at": "2021-01-14T23:55:04.271Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0716794540000000",
+        "filled_size": "1.40000000",
+        "executed_value": "20.4798440000000000",
+        "status": "done",
+        "settled": true
     }
 ]

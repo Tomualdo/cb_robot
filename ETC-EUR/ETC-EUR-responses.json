@@ -4462,5 +4462,20 @@
         "executed_value": "12.3825000000000000",
         "status": "done",
         "settled": true
+    },
+    {
+        "message": "Limit only mode"
+    },
+    {
+        "message": "Limit only mode"
+    },
+    {
+        "message": "Limit only mode"
+    },
+    {
+        "message": "Limit only mode"
+    },
+    {
+        "message": "Limit only mode"
     }
 ]
