@@ -187,6 +187,31 @@ def order_market_size_(response,product_folder,currency):
                             if key != 'message':
                                 print("ID get attempt successful")
                                 pp(response)
+                                ################
+
+                                if key == 'status':
+                                    print("----------status key found...")
+                                    if response['status'] == 'pending':
+                                        for seq in range(1800):
+                                            print("request id again...")
+                                            r = requests.get(api_url + 'orders/'+id, auth=auth)
+                                            response = r.json()
+                                            pp(response)
+                                            if response['status'] == 'done':
+                                                print("----------ID get attempt successful")
+                                                pp(response)
+                                                save_responses(response,product_folder,currency)       
+                                                return r.json()
+                                            else:
+                                                print("----------not DONE sell response {}".format(seq))                  
+                                                time.sleep(1)
+                                        return{'done_reason':'failed'}
+                                    elif response['status'] == 'done':
+                                        pp(response)
+                                        save_responses(response,product_folder,currency)
+                                        return r.json()
+
+                                ################
                                 save_responses(response,product_folder,currency)       
                                 return r.json()
                             else:

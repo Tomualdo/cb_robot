@@ -13,5 +13,5 @@ from pprintpp import pprint as pp
 # print(a['bids'][0][0])
 # pp(get_product("BTC-EUR"))
 # 13569921-133c-4cf3-8277-74a23fba7059
-order_info('ec94089d-c272-4008-8289-50384d6c8bf0')
+order_info('72770296-2532-4051-ba4c-57d20f4ba4a3')
 # pp(get_orders_done('CGLD-EUR')) # list

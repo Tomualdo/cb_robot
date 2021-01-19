@@ -306,7 +306,7 @@ max_buys = strategy_data['max_buys']
 
 #calculat smv simple moving average and standart deviation
 # #set day period
-f = f[-60*40:]
+f = f[-60*140:]
 
 
 f['SMA'] = f['close'].rolling(window=strategy_SMA).mean()
