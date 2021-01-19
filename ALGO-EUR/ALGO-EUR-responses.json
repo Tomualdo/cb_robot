@@ -7578,5 +7578,14 @@
         "executed_value": "12.1858000000000000",
         "status": "done",
         "settled": true
+    },
+    {
+        "message": "size is too accurate. Smallest unit is 1.00000000"
+    },
+    {
+        "message": "size is too accurate. Smallest unit is 1.00000000"
+    },
+    {
+        "message": "size is too accurate. Smallest unit is 1.00000000"
     }
 ]

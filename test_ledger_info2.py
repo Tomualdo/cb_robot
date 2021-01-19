@@ -7,28 +7,29 @@ import dateutil.parser
 import sys
 import natsort
 from portfolio2 import get_ballance
+from product_list import products 
 
 current_product = 'ETC-EUR'
-products = [
-                    "OMG-EUR",
-                    "XRP-EUR",
-                    "XTZ-EUR",
-                    "UMA-EUR",
-                    "CGLD-EUR",
-                    "NMR-EUR",
-                    "ZRX-EUR",
-                    "ALGO-EUR",
-                    "ETC-EUR",
-                    "EOS-EUR",
-                    "BAND-EUR",
-                    "XLM-EUR",
-                    "BCH-EUR",
-                    "BTC-EUR",
-                    "LINK-EUR",
-                    "LTC-EUR",
-                    "FIL-EUR",
-                    "BNT-EUR"
-                    ]
+#products = [
+#                    "OMG-EUR",
+#                    "XRP-EUR",
+#                    "XTZ-EUR",
+#                    "UMA-EUR",
+#                    "CGLD-EUR",
+#                    "NMR-EUR",
+#                    "ZRX-EUR",
+#                    "ALGO-EUR",
+#                    "ETC-EUR",
+#                    "EOS-EUR",
+#                    "BAND-EUR",
+#                    "XLM-EUR",
+#                    "BCH-EUR",
+#                    "BTC-EUR",
+#                    "LINK-EUR",
+#                    "LTC-EUR",
+#                    "FIL-EUR",
+#                    "BNT-EUR"
+#                    ]
 
 ROOT_DIR = os.path.abspath(os.curdir)
 

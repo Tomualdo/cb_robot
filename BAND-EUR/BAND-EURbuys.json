@@ -1973,10 +1973,10 @@
             "spend_EUR": 11.68986,
             "coins": 1.4,
             "fee": 0.04091451,
-            "sell_flag": false,
-            "sell_price": 0,
-            "sell_time": 0,
-            "earn": 0,
+            "sell_flag": true,
+            "sell_price": 8.5296,
+            "sell_time": "2021-01-19 07:25:00",
+            "earn": 0.20978496000000035,
             "ooa_buy": true
         }
     ],
@@ -2029,10 +2029,10 @@
             "spend_EUR": 11.62742,
             "coins": 1.4,
             "fee": 0.04069597,
-            "sell_flag": false,
-            "sell_price": 0,
-            "sell_time": 0,
-            "earn": 0,
+            "sell_flag": true,
+            "sell_price": 8.493300000000001,
+            "sell_time": "2021-01-19 07:24:00",
+            "earn": 0.22158282999999912,
             "ooa_buy": true
         }
     ],
@@ -2085,10 +2085,10 @@
             "spend_EUR": 11.640709,
             "coins": 1.4,
             "fee": 0.0407424815,
-            "sell_flag": false,
-            "sell_price": 0,
-            "sell_time": 0,
-            "earn": 0,
+            "sell_flag": true,
+            "sell_price": 8.4936,
+            "sell_time": "2021-01-19 07:24:00",
+            "earn": 0.2087123600000016,
             "ooa_buy": true
         }
     ],
@@ -2104,6 +2104,132 @@
             "sell_time": "2021-01-19 02:01:00",
             "earn": 0.13746214999999928,
             "ooa_buy": true
+        }
+    ],
+    "2021-01-19 08:40:00": [
+        {
+            "buy_time": "2021-01-19 08:40:00",
+            "buy_price": 8.559000000000001,
+            "spend_EUR": 11.9826,
+            "coins": 1.4,
+            "fee": 0.0419391,
+            "sell_flag": true,
+            "sell_price": 8.7192,
+            "sell_time": "2021-01-19 09:14:00",
+            "earn": 0.18155592000000098,
+            "ooa_buy": true
+        }
+    ],
+    "2021-01-19 11:30:00": [
+        {
+            "buy_time": "2021-01-19 11:30:00",
+            "buy_price": 8.5927,
+            "spend_EUR": 12.02978,
+            "coins": 1.4,
+            "fee": 0.04210423,
+            "sell_flag": false,
+            "sell_price": 0,
+            "sell_time": 0,
+            "earn": 0,
+            "ooa_buy": true
+        }
+    ],
+    "2021-01-19 12:16:00": [
+        {
+            "buy_time": "2021-01-19 12:16:00",
+            "buy_price": 8.5016,
+            "spend_EUR": 12.072272,
+            "coins": 1.42,
+            "fee": 0.042252952,
+            "sell_flag": true,
+            "sell_price": 8.642975352112677,
+            "sell_time": "2021-01-19 18:32:00",
+            "earn": 0.1577974125000008,
+            "ooa_buy": true
+        }
+    ],
+    "2021-01-19 13:39:00": [
+        {
+            "buy_time": "2021-01-19 13:39:00",
+            "buy_price": 8.386700000000001,
+            "spend_EUR": 11.992981,
+            "coins": 1.43,
+            "fee": 0.0419754335,
+            "sell_flag": true,
+            "sell_price": 8.541500000000001,
+            "sell_time": "2021-01-19 18:15:00",
+            "earn": 0.1786137925000002,
+            "ooa_buy": true
+        }
+    ],
+    "2021-01-19 17:08:00": [
+        {
+            "buy_time": "2021-01-19 17:08:00",
+            "buy_price": 8.2331,
+            "spend_EUR": 12.020326,
+            "coins": 1.46,
+            "fee": 0.042071141,
+            "sell_flag": true,
+            "sell_price": 8.42545205479452,
+            "sell_time": "2021-01-19 18:10:00",
+            "earn": 0.23777993999999936,
+            "ooa_buy": true
+        }
+    ],
+    "2021-01-19 19:20:00": [
+        {
+            "buy_time": "2021-01-19 19:20:00",
+            "buy_price": 8.382,
+            "spend_EUR": 11.98626,
+            "coins": 1.43,
+            "fee": 0.04195191,
+            "sell_flag": false,
+            "sell_price": 0,
+            "sell_time": 0,
+            "earn": 0,
+            "ooa_buy": true
+        }
+    ],
+    "2021-01-19 19:56:00": [
+        {
+            "buy_time": "2021-01-19 19:56:00",
+            "buy_price": 8.234,
+            "spend_EUR": 12.02164,
+            "coins": 1.46,
+            "fee": 0.04207574,
+            "sell_flag": false,
+            "sell_price": 0,
+            "sell_time": 0,
+            "earn": 0,
+            "ooa_buy": true
+        }
+    ],
+    "2021-01-19 19:58:00": [
+        {
+            "buy_time": "2021-01-19 19:58:00",
+            "buy_price": 8.1286,
+            "spend_EUR": 12.030328,
+            "coins": 1.48,
+            "fee": 0.042106148,
+            "sell_flag": false,
+            "sell_price": 0,
+            "sell_time": 0,
+            "earn": 0,
+            "ooa_buy": true
+        }
+    ],
+    "2021-01-19 19:59:00": [
+        {
+            "buy_time": "2021-01-19 19:59:00",
+            "buy_price": 8.1614,
+            "spend_EUR": 20.077044,
+            "coins": 2.46,
+            "fee": 0.070269654,
+            "sell_flag": false,
+            "sell_price": 0,
+            "sell_time": 0,
+            "earn": 0,
+            "ooa_buy": false
         }
     ]
 }
