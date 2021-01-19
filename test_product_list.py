@@ -1,0 +1,20 @@
+[
+                    "OMG-EUR",
+                    "BTC-EUR",
+                    "XTZ-EUR",
+                    "UMA-EUR",
+                    "CGLD-EUR",
+                    "NMR-EUR",
+                    "ZRX-EUR",
+                    "ALGO-EUR",
+                    "ETC-EUR",
+                    "EOS-EUR",
+                    "BAND-EUR",
+                    "XLM-EUR",
+                    "BCH-EUR",
+                    "FIL-EUR",
+                    "LINK-EUR",
+                    "LTC-EUR",
+                    "BNT-EUR",
+                    "NU-EUR"
+                    ]

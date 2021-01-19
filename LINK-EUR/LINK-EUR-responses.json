@@ -1587,5 +1587,239 @@
         "executed_value": "22.6173600000000000",
         "status": "done",
         "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "5844f783-b1fd-4080-8bfb-3e7adb77a79c",
+        "size": "1.60000000",
+        "product_id": "LINK-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-14T23:06:12.514593Z",
+        "done_at": "2021-01-14T23:06:12.523Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0803412960000000",
+        "filled_size": "1.60000000",
+        "executed_value": "22.9546560000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "0fb58201-fbd4-4389-a8da-1cf105d83c56",
+        "size": "1.40000000",
+        "product_id": "LINK-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-14T23:55:04.261166Z",
+        "done_at": "2021-01-14T23:55:04.271Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0716794540000000",
+        "filled_size": "1.40000000",
+        "executed_value": "20.4798440000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "message": "size is too small. Minimum size is 1.00000000"
+    },
+    {
+        "message": "size is too small. Minimum size is 1.00000000"
+    },
+    {
+        "message": "size is too small. Minimum size is 1.00000000"
+    },
+    {
+        "message": "size is too small. Minimum size is 1.00000000"
+    },
+    {
+        "id": "957e6d86-38a2-4b1e-98ea-77090d23c3c8",
+        "size": "1",
+        "product_id": "LINK-EUR",
+        "side": "buy",
+        "stp": "dc",
+        "funds": "262.9666",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-19T12:47:21.126071Z",
+        "fill_fees": "0",
+        "filled_size": "0",
+        "executed_value": "0",
+        "status": "pending",
+        "settled": false
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "957e6d86-38a2-4b1e-98ea-77090d23c3c8",
+        "size": "1.00000000",
+        "product_id": "LINK-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "buy",
+        "funds": "262.9666000000000000",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-19T12:47:21.126071Z",
+        "done_at": "2021-01-19T12:47:21.152Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0624841350000000",
+        "filled_size": "1.00000000",
+        "executed_value": "17.8526100000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "id": "4f534c01-4abc-4f69-902f-660405a3679f",
+        "size": "1",
+        "product_id": "LINK-EUR",
+        "side": "buy",
+        "stp": "dc",
+        "funds": "251.6592167",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-19T15:27:06.675611Z",
+        "fill_fees": "0",
+        "filled_size": "0",
+        "executed_value": "0",
+        "status": "pending",
+        "settled": false
+    },
+    {
+        "id": "4f534c01-4abc-4f69-902f-660405a3679f",
+        "size": "1.00000000",
+        "product_id": "LINK-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "buy",
+        "funds": "251.6592167000000000",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-19T15:27:06.675611Z",
+        "done_at": "2021-01-19T15:27:06.685Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0618129050000000",
+        "filled_size": "1.00000000",
+        "executed_value": "17.6608300000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "18043e02-f434-4ddb-9213-8b5eefce018e",
+        "size": "1.00000000",
+        "product_id": "LINK-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-19T16:05:31.298656Z",
+        "done_at": "2021-01-19T16:05:31.337Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0626830750000000",
+        "filled_size": "1.00000000",
+        "executed_value": "17.9094500000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "id": "02c34a80-3f0e-4ddf-8bc9-b63f18555219",
+        "size": "1",
+        "product_id": "LINK-EUR",
+        "side": "buy",
+        "stp": "dc",
+        "funds": "233.3156271",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-19T16:49:46.232827Z",
+        "fill_fees": "0",
+        "filled_size": "0",
+        "executed_value": "0",
+        "status": "pending",
+        "settled": false
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "02c34a80-3f0e-4ddf-8bc9-b63f18555219",
+        "size": "1.00000000",
+        "product_id": "LINK-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "buy",
+        "funds": "233.3156271000000000",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-19T16:49:46.232827Z",
+        "done_at": "2021-01-19T16:49:46.243Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0620408600000000",
+        "filled_size": "1.00000000",
+        "executed_value": "17.7259600000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "be6dd8df-e7a8-4248-932c-35a060dab40e",
+        "size": "1.00000000",
+        "product_id": "LINK-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "sell",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-19T17:28:07.506661Z",
+        "done_at": "2021-01-19T17:28:07.514Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0630000350000000",
+        "filled_size": "1.00000000",
+        "executed_value": "18.0000100000000000",
+        "status": "done",
+        "settled": true
+    },
+    {
+        "id": "88cbae53-94a5-4c91-a801-5f2141fa65ba",
+        "size": "1",
+        "product_id": "LINK-EUR",
+        "side": "buy",
+        "stp": "dc",
+        "funds": "203.4462733",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-19T18:06:29.564426Z",
+        "fill_fees": "0",
+        "filled_size": "0",
+        "executed_value": "0",
+        "status": "pending",
+        "settled": false
+    },
+    {
+        "id": "88cbae53-94a5-4c91-a801-5f2141fa65ba",
+        "size": "1.00000000",
+        "product_id": "LINK-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "buy",
+        "funds": "203.4462733000000000",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-19T18:06:29.564426Z",
+        "done_at": "2021-01-19T18:06:29.631Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0628242300000000",
+        "filled_size": "1.00000000",
+        "executed_value": "17.9497800000000000",
+        "status": "done",
+        "settled": true
     }
 ]
