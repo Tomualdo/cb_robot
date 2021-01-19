@@ -95,6 +95,7 @@ def get_calc_minSize_over_C_avg(current_product,act_calc_size,strategy_data):
     data_minsize = float(minsize['base_min_size'])
     print("***MINSIZE is {}".format(data_minsize))
     ooa_buy_size_ratio = strategy_data['ooa_buy_size_ratio']
+    print ("act size {} vs data_minsize {}".format(act_calc_size,data_minsize))
     if act_calc_size < data_minsize:
         return data_minsize
     else:
