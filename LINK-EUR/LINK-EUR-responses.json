@@ -1627,5 +1627,8 @@
         "executed_value": "20.4798440000000000",
         "status": "done",
         "settled": true
+    },
+    {
+        "message": "size is too small. Minimum size is 1.00000000"
     }
 ]

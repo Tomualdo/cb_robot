@@ -26,7 +26,8 @@ products = [
                     "BTC-EUR",
                     "LINK-EUR",
                     "LTC-EUR",
-                    "FIL-EUR"
+                    "FIL-EUR",
+                    "BNT-EUR"
                     ]
 
 ROOT_DIR = os.path.abspath(os.curdir)

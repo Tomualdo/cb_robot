@@ -953,7 +953,7 @@ def on_open(ws):
                 "product_ids":
                 [
                     "OMG-EUR",
-                    
+                    "BTC-EUR",
                     "XTZ-EUR",
                     "UMA-EUR",
                     "CGLD-EUR",
@@ -968,7 +968,8 @@ def on_open(ws):
                     "FIL-EUR",
                     "LINK-EUR",
                     "LTC-EUR",
-                    "BNT-EUR"
+                    "BNT-EUR",
+                    "NU-EUR"
                     ]
             }
         ],
