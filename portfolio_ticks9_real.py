@@ -75,7 +75,7 @@ def get_calc_minSize(current_product,eur=10):
     if calc < data_minsize:
         return data_minsize
     else:
-        return round(float(calc),1)
+        return round(float(calc),2)
 
     # if current_product == 'ALGO-EUR':
     #     return round(float(calc),0)
@@ -98,7 +98,7 @@ def get_calc_minSize_over_C_avg(current_product,act_calc_size,strategy_data):
     if act_calc_size < data_minsize:
         return data_minsize
     else:
-        return round(float(act_calc_size * ooa_buy_size_ratio),1)
+        return round(float(act_calc_size * ooa_buy_size_ratio),2)
 
     # if current_product == 'BTC-EUR':
     #     return 0.001
