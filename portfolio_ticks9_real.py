@@ -96,10 +96,11 @@ def get_calc_minSize_over_C_avg(current_product,act_calc_size,strategy_data):
     print("***MINSIZE is {}".format(data_minsize))
     ooa_buy_size_ratio = strategy_data['ooa_buy_size_ratio']
     print ("act size {} vs data_minsize {}".format(act_calc_size,data_minsize))
+    act_calc_size = round(float(act_calc_size * ooa_buy_size_ratio),2)
     if act_calc_size < data_minsize:
         return data_minsize
     else:
-        return round(float(act_calc_size * ooa_buy_size_ratio),2)
+        return round(float(act_calc_size),2)
 
     # if current_product == 'BTC-EUR':
     #     return 0.001
