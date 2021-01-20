@@ -406,11 +406,13 @@ def strategy(data,strategy_data,current_product):
         ooa_min_buy_time_buy_ratio = strategy_data['ooa_min_buy_time_buy_ratio']
 
         #get actuall ballance
-        actual_ballance = round(float(get_ballance()),2)
+        #actual_ballance = round(float(get_ballance()),2)
+        actual_ballance = "-"
 
         #calc ballance ratio
-        ballance_ratio = round(actual_ballance / min_ballance_buy,2)
-
+        # ballance_ratio = round(actual_ballance / min_ballance_buy,2)
+        ballance_ratio = "-"
+        
         #get min ballance buy
         min_ballance_buy = EUR_to_buy_size*1.4
 
