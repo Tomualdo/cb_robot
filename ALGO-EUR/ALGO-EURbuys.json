@@ -2070,5 +2070,19 @@
             "earn": 0,
             "ooa_buy": true
         }
+    ],
+    "2021-01-20 09:18:00": [
+        {
+            "buy_time": "2021-01-20 09:18:00",
+            "buy_price": 0.4351,
+            "spend_EUR": 0,
+            "coins": 0,
+            "fee": 0,
+            "sell_flag": false,
+            "sell_price": 0,
+            "sell_time": 0,
+            "earn": 0,
+            "ooa_buy": false
+        }
     ]
 }

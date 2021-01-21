@@ -1,6 +1,6 @@
 products = [
                     "OMG-EUR",
-                    "XRP-EUR",
+#                    "XRP-EUR",
                     "XTZ-EUR",
                     "UMA-EUR",
                     "CGLD-EUR",

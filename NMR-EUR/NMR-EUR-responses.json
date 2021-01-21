@@ -5038,5 +5038,42 @@
         "executed_value": "11.9790300000000000",
         "status": "done",
         "settled": true
+    },
+    {
+        "id": "fc7ebac7-7a20-4627-94e5-b85cd169ecc1",
+        "size": "0.86",
+        "product_id": "NMR-EUR",
+        "side": "buy",
+        "stp": "dc",
+        "funds": "45.6880759",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-20T23:02:07.676021Z",
+        "fill_fees": "0",
+        "filled_size": "0",
+        "executed_value": "0",
+        "status": "pending",
+        "settled": false
+    },
+    {
+        "message": "NotFound"
+    },
+    {
+        "id": "fc7ebac7-7a20-4627-94e5-b85cd169ecc1",
+        "size": "0.86000000",
+        "product_id": "NMR-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "buy",
+        "funds": "45.6880759000000000",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-20T23:02:07.676021Z",
+        "done_at": "2021-01-20T23:02:07.69Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0705992490000000",
+        "filled_size": "0.86000000",
+        "executed_value": "20.1712140000000000",
+        "status": "done",
+        "settled": true
     }
 ]
