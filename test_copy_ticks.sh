@@ -15,11 +15,11 @@
 #cp -v ~/Documents/coinbase_test/XTZ-EUR/data* ~/coin1/coinbase_test/XTZ-EUR/
 #cp -v ~/Documents/coinbase_test/ZRX-EUR/data* ~/coin1/coinbase_test/ZRX-EUR/
 
-for i in $(find ~/Documents/coinbase_test/ -maxdepth 1 -type d -name "*-EUR");
+for i in $(find ~/Documents/coinbase_ticker/ -maxdepth 1 -type d -name "*-EUR");
 do
     #echo ${i}
     #ls ${i}/data* | sort -n | tail -n 1
     #/home/tom/Documents/coinbase_test/XRP-EUR/dataXRP-EUR20210104.json
     
-    cp -v `ls ${i}/data* | sort -n | tail -n 5` ~/coin1/coinbase_test/${i#/*/*/*/*/}
+    cp -v `ls ${i}/data* | sort -n | tail -n 5` ~/Documents/coinbase_migrated/cb_robot/${i#/*/*/*/*/}
 done

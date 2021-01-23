@@ -5494,5 +5494,39 @@
         "executed_value": "12.0347245900000000",
         "status": "done",
         "settled": true
+    },
+    {
+        "id": "945d55e1-8951-40a7-ab2a-b475cf2d7a81",
+        "size": "45.62",
+        "product_id": "ZRX-EUR",
+        "side": "buy",
+        "stp": "dc",
+        "funds": "29.45885598",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-22T20:01:13.492474Z",
+        "fill_fees": "0",
+        "filled_size": "0",
+        "executed_value": "0",
+        "status": "pending",
+        "settled": false
+    },
+    {
+        "id": "945d55e1-8951-40a7-ab2a-b475cf2d7a81",
+        "size": "45.62000000",
+        "product_id": "ZRX-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "buy",
+        "funds": "29.4588559800000000",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-22T20:01:13.492474Z",
+        "done_at": "2021-01-22T20:01:13.505Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0700812387100000",
+        "filled_size": "45.62000000",
+        "executed_value": "20.0232110600000000",
+        "status": "done",
+        "settled": true
     }
 ]

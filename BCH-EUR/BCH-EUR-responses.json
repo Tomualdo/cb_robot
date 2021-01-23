@@ -4166,5 +4166,39 @@
         "executed_value": "20.3540000000000000",
         "status": "done",
         "settled": true
+    },
+    {
+        "id": "2966723e-bcbb-4bfb-a52f-b0e4adc9426e",
+        "size": "0.06",
+        "product_id": "BCH-EUR",
+        "side": "buy",
+        "stp": "dc",
+        "funds": "30.02881377",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-23T08:53:36.518296Z",
+        "fill_fees": "0",
+        "filled_size": "0",
+        "executed_value": "0",
+        "status": "pending",
+        "settled": false
+    },
+    {
+        "id": "2966723e-bcbb-4bfb-a52f-b0e4adc9426e",
+        "size": "0.06000000",
+        "product_id": "BCH-EUR",
+        "profile_id": "9a34ae8a-ff8f-4e7a-8ad3-ac3f61d2a175",
+        "side": "buy",
+        "funds": "30.0288137700000000",
+        "type": "market",
+        "post_only": false,
+        "created_at": "2021-01-23T08:53:36.518296Z",
+        "done_at": "2021-01-23T08:53:36.623Z",
+        "done_reason": "filled",
+        "fill_fees": "0.0756462000000000",
+        "filled_size": "0.06000000",
+        "executed_value": "21.6132000000000000",
+        "status": "done",
+        "settled": true
     }
 ]
