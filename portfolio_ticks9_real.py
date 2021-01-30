@@ -59,6 +59,15 @@ def json_data_merge(older_json,newer_json,current_product):
         old[current_product].append(new[current_product][idx])
     return old
 
+def min_base_round(base):
+    if base >= 1.0:
+        return 0
+    for y,x in enumerate(range(1,6)):
+        # print(y,base* 10**x)
+        calc_base = base*10**x
+        if calc_base==1:
+            return y+1
+
 def get_calc_minSize(current_product,eur=10):
     # if current_product == 'BTC-EUR':
     #     return 0.001
@@ -75,7 +84,7 @@ def get_calc_minSize(current_product,eur=10):
     if calc < data_minsize:
         return data_minsize
     else:
-        return round(float(calc),2)
+        return round(float(calc),min_base_round(data_minsize))
 
     # if current_product == 'ALGO-EUR':
     #     return round(float(calc),0)
@@ -100,7 +109,7 @@ def get_calc_minSize_over_C_avg(current_product,act_calc_size,strategy_data):
     if act_calc_size < data_minsize:
         return data_minsize
     else:
-        return round(float(act_calc_size),2)
+        return round(float(act_calc_size),min_base_round(data_minsize))
 
     # if current_product == 'BTC-EUR':
     #     return 0.001

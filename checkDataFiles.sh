@@ -1,8 +1,8 @@
 #!/bin/sh
 for i in $(seq 1 2)
 do
-
-/home/tom/Documents/coinbase_migrated/cb_robot/.venv/bin/python3 /home/tom/Documents/coinbase_migrated/cb_robot/test_ledger_info2.py 1>/dev/null 2>/dev/null
+date >> ~/portfolio_gains.txt
+/home/tom/Documents/coinbase_migrated/cb_robot/.venv/bin/python3 /home/tom/Documents/coinbase_migrated/cb_robot/test_ledger_info2.py | tail -n5 >> ~/portfolio_gains.txt
 if [ $? -eq 0 ]; then
     echo exit normally
     exit
