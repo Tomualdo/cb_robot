@@ -17,5 +17,6 @@ products = [
                     "LTC-EUR",
                     "FIL-EUR",
                     "BNT-EUR",
-                    "NU-EUR"
+                    "NU-EUR",
+"ADA-EUR"
                     ]

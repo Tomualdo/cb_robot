@@ -980,7 +980,8 @@ def on_open(ws):
                     "LINK-EUR",
                     "LTC-EUR",
                     "BNT-EUR",
-                    "NU-EUR"
+                    "NU-EUR",
+"ADA-EUR"
                     ]
             }
         ],
