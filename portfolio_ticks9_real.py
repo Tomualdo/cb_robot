@@ -63,9 +63,9 @@ def min_base_round(base):
     if base >= 1.0:
         return 0
     for y,x in enumerate(range(1,6)):
-        # print(y,base* 10**x)
+        print(y,base* 10**x)
         calc_base = base*10**x
-        if calc_base==1:
+        if calc_base>=1:
             return y+1
 
 def get_calc_minSize(current_product,eur=10):
@@ -676,7 +676,7 @@ def strategy(data,strategy_data,current_product):
             elif data['close'][i] < data['lower'][i] and (buys_qty < max_buys or ooa_qty < ooa_max_buys) and min_ballance_buy < actual_ballance:
                 bullish = data['close'][i] / data['C-AVG'][i]
                 print("want buy:{} -- close price / c-avg ={}".format(current_product,round(bullish,2)))
-                if bullish > 1.08:
+                if bullish > 1.15:
                     print("BRUTAL Bullish..NOT BUY !!")
                     break
                 logger.warning(" wanna buy "+current_product)
@@ -963,22 +963,22 @@ def on_open(ws):
                 "name": "ticker",
                 "product_ids":
                 [
-                    "OMG-EUR",
+                    #"OMG-EUR",
                     "BTC-EUR",
                     "XTZ-EUR",
                     "UMA-EUR",
-                    "CGLD-EUR",
-                    "NMR-EUR",
+                    #"CGLD-EUR",
+                    #"NMR-EUR",
                     "ZRX-EUR",
                     "ALGO-EUR",
-                    "ETC-EUR",
-                    "EOS-EUR",
+                    #"ETC-EUR",
+                    #"EOS-EUR",
                     "BAND-EUR",
-                    "XLM-EUR",
-                    "BCH-EUR",
+                    #"XLM-EUR",
+                    #"BCH-EUR",
                     "FIL-EUR",
                     "LINK-EUR",
-                    "LTC-EUR",
+                    #"LTC-EUR",
                     "BNT-EUR",
                     "NU-EUR",
 "ADA-EUR"

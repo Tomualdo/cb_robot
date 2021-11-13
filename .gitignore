@@ -12,3 +12,4 @@ authorize_coinbase.py
 rtvs-dl.sh
 .pyc
 .code-workspace
+*-EUR/
